@@ -3,6 +3,7 @@
 *...but you can call me Bill*
 
 My GitHub is https://github.com/William-Moreno
+
 [My GitHub](https://github.com/William-Moreno)
 
 ## Growth Mindset
