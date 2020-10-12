@@ -24,7 +24,7 @@ I view a **growth mindset** versus a fixed mindset as the equivalent of a "Nurtu
 
 ## Links
 
-[Markdown](markdown.md)
+* [Markdown](markdown.md)
 
 
 
