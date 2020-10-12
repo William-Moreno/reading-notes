@@ -1,6 +1,6 @@
 # Reading notes for Code Fellows
 ---
-![Profile Pic](Bill-Pic.jpg,200,200)
+![Profile Pic](Bill-Pic.jpg)
 
 ### My name is William.
 *...but you can call me Bill*
