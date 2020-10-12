@@ -3,7 +3,6 @@
 *...but you can call me Bill*
 
 My GitHub is https://github.com/William-Moreno
-[My GitHub](https://github.com/William-Moreno)
 
 ## Growth Mindset
 
@@ -17,6 +16,10 @@ I view a **growth mindset** versus a fixed mindset as the equivalent of a "Nurtu
   - Go under it
   - Remove it
 - Criticism is just feedback. Stay positive and use it to learn more
+
+## Links
+
+[Markdown](markdown.md)
 
 
 
