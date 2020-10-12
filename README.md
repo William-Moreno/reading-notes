@@ -1,5 +1,6 @@
+# Reading notes for Code Fellows
 
-# My name is William.
+### My name is William.
 *...but you can call me Bill*
 
 My GitHub is https://github.com/William-Moreno
