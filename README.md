@@ -2,7 +2,7 @@
 ---
 ![Profile Pic](Bill-Pic.jpg)
 
-### My name is William.
+### My name is William Moreno.
 *...but you can call me Bill*
 
 My GitHub is https://github.com/William-Moreno
