@@ -59,7 +59,8 @@ The use of *--global* in these commands applies the settings accross the whole s
 |  | Also checks out a copy of the newest version for editing. |
 | `$ git add filename` | File filename is tracked and staged for committing |
 | `$ git commit -m "note about changes made` | Commits the changes and records what you did within the commit message |
-
+| `$ git push origin main` | Pushes changes from the local “main” branch to the remote repository |
+| `$ git status` | Shows information regarding changes to be committed |
 
 
 [Back to Main](README.md)
