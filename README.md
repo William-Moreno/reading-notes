@@ -15,7 +15,7 @@ I view a **growth mindset** versus a **fixed mindset** as the equivalent of a "N
 
 ### A few keys to maintaining a growth mindset.
 - Failing is a key part of learning
-- When facing an obstacle challenge yourself to step back and find a way to:
+- When facing an obstacle, challenge yourself to step back and find a way to:
   - Go over it
   - Go around it
   - Go under it
