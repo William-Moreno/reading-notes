@@ -39,7 +39,7 @@ Some developers may chose one text editor and remain with it monogamously, and s
 # Basic Terminal Usage
 ---
 
-| **command** | **effect** |
+| **Command** | **Effect** |
 | --- | --- |
 | `cd` | Change directories |
 | `ls` | List contents of directory |
