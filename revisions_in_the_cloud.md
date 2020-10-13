@@ -62,5 +62,9 @@ The use of *--global* in these commands applies the settings accross the whole s
 | `$ git push origin main` | Pushes changes from the local “main” branch to the remote repository |
 | `$ git status` | Shows information regarding changes to be committed |
 
+After cloning a project, all files in a checked out (or working) copy of a project file will be either in a **tracked** or **untracked** state.
+- **Tracked** - Files can be modified, unmodified, or staged; they were part of the most recent file snapshot.
+- **Untracked** - Files were not in the last snapshot and do not currently reside in the staging area.
+
 
 [Back to Main](README.md)
