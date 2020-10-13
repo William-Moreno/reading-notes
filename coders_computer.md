@@ -33,8 +33,22 @@ There are three basic divisions of text editors. They consist of:
   - **NetBeans**
   - **PyCharm**
 
-Some developers may chose one text editor and remain with it monogamously, and some may change text editors with each new season. 
+Some developers may chose one text editor and remain with it monogamously, and some may change text editors with each new season.
 
+---
+# Basic Terminal Usage
+---
+
+| **command** | **effect** |
+| --- | --- |
+| `cd` | Change directories |
+| `ls` | List contents of directory |
+| `touch` | Creates empty file |
+| `mkdir` | Creates a directory |
+| `mv` | Moves a file |
+| `cp` | Makes a copy of a file |
+| `rm` | Removes a file |
+| `rmdir` | Removes a directory |
 
 
 [Back to Main](README.md)
