@@ -26,6 +26,7 @@ I view a **growth mindset** versus a **fixed mindset** as the equivalent of a "N
 
 * [Markdown](markdown.md)
 * [Coder's Computer](coders_computer.md)
+* [Revisions in the Cloud](revisions_in_the_cloud.md)
 
 
 
