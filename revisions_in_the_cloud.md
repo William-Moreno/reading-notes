@@ -37,17 +37,26 @@ Setting the user name to 'John Doe' would be accomplished by:
 ```
 $ git config --global user.name "John Doe"
 ```
-Setting the email address to 'jdoe@snailmail.com' is done by:
+
+Setting the email address to 'email@email.com' is done by:
 ```
-$ git config --global user.email "jdoe@snailmail.com"
+$ git config --global user.email "email@email.com"
 ```
 
+Setting the text editor to emacs...
+```
+$ git config --global core.editor emacs
+```
+
+The use of *--global* in these commands applies the settings accross the whole system.
   
 ## Useful Git Commands in the Terminal
 
 | #### Command | #### Description |
 | --- | --- |
-| 
+| `$ git config --list` | Checks the current settings |
+| `$ git clone https://github.com/test` | Creates directory named test with copies of all files in the project |
+|  | Also checks out a copy of the newest version for editing. |
 
 
 [Back to Main](README.md)
