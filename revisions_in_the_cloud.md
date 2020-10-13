@@ -31,7 +31,17 @@ Files in Git exist in three main states:
   
 ### Initial Configuration
 
-After installing Git, it should be configured using `$ git config`.
+After installing Git, settings for identity and text editors should be configured using `$ git config`.
+
+Setting the user name to 'John Doe' would be accomplished by:
+```
+$ git config --global user.name "John Doe"
+```
+Setting the email address to 'jdoe@snailmail.com' is done by:
+```
+$ git config --global user.email "jdoe@snailmail.com"
+```
+
   
 ## Useful Git Commands in the Terminal
 
