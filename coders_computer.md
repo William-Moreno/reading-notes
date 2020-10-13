@@ -1,6 +1,6 @@
 # Text Editors
 ---
-A text editor is one of a coder's most important and used tools. Their are a variety of choices for a text editor. Each with differing pros and cons. By and large however, the choice of which text editor a developer uses to write their code is largely a matter of personal preference. But there are some features that are routinely looked for by developers.
+A text editor is one of a coder's most important and used tools. There are a variety of choices for a text editor, each with differing pros and cons. By and large however, the choice of which text editor a developer uses to write their code is largely a matter of personal preference. *But* there are some features that are routinely looked for by developers.
 
 ## Desirable Features in a Text Editor
 
