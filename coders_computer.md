@@ -19,7 +19,7 @@ There are several features that text editors may possess, including live view (w
 
 There are three basic divisions of text editors. They consist of:
 
-- Preloaded text editors that come as part of an Operating System. These are typically bare-bones text editors that have few to no added features to make writing code easier and more efficient. *Examples are:* 
+- Preloaded text editors that come as part of an Operating System. These are typically bare-bones text editors that have few-to-no added features to make writing code easier and more efficient. *Examples are:* 
   - **Text Edit** -Mac
   - **Notepad** -Windows
   - **Gedit** (for instance) -Linux
@@ -33,7 +33,7 @@ There are three basic divisions of text editors. They consist of:
   - **NetBeans**
   - **PyCharm**
 
-
+Some developers may chose one text editor and remain with it monogamously, and some may change text editors with each new season. 
 
 
 
