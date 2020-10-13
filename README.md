@@ -11,7 +11,7 @@ My GitHub is https://github.com/William-Moreno
 
 ## Growth Mindset
 
-I view a **growth mindset** versus a fixed mindset as the equivalent of a "Nurture vs. Nature" take on learning.
+I view a **growth mindset** versus a **fixed mindset** as the equivalent of a "Nurture vs. Nature" take on intelligence and learning. In my opinion, it's not what you start with, but what you *choose* to do with it and make of it.
 
 ### A few keys to maintaining a growth mindset.
 - Failing is a key part of learning
