@@ -57,6 +57,9 @@ The use of *--global* in these commands applies the settings accross the whole s
 | `$ git config --list` | Checks the current settings |
 | `$ git clone https://github.com/test` | Creates directory named test with copies of all files in the project |
 |  | Also checks out a copy of the newest version for editing. |
+| `$ git add filename` | File filename is tracked and staged for committing |
+| `$ git commit -m "note about changes made` | Commits the changes and records what you did within the commit message |
+
 
 
 [Back to Main](README.md)
