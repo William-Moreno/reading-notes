@@ -22,7 +22,7 @@ I have a background in the manufacturing field, both for the trucking and the ae
 - [Coder's Computer](coders_computer.md)
 - [Revisions in the Cloud](revisions_in_the_cloud.md)
 - [Structuring Webpages](structuring_webpages.md)
-- [Designing with CSS](css_styling.md)
+- [Reading 5]()
 - [Reading 6a]()
 - [Reading 6b]()
 - [Reading 7]()
