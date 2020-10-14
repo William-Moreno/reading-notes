@@ -20,4 +20,13 @@ Several strategies exist for designing websites. One possible progression is:
 
 ## HTML5 Layout Elements
 
+Prior to HTML5, web page authors mostly used `<div>` elements when creating all of the different sections of web page. HTML5 brings semantic tags into use which indicate the kind of content you will find in them. These work better with readers as well. _Examples of these are:_
+
+- `<header>` - header of either the page , or sometimes articles or sections within
+- `<footer>` - footer of either the page , or sometimes articles or sections within
+- `<nav>` - navigation
+- `<article>` - a section of the page that could stand alone
+- `<aside>` - contains content related to the entire page
+- `<section>` - groups related content together
+
 [Back to Main](README.md)
