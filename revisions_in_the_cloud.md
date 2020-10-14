@@ -1,8 +1,11 @@
 # Revisions in the Cloud
+
 ---
 
 ## Version Control
+
 Version Control Systems(VCS) are systems that allow developers to:
+
 1. Track modifications to files
 1. Compare changes made to files
 1. Revert files or projects to previous versions
@@ -13,6 +16,7 @@ In the past, programmers utilized Local Version Control(LVC), which consisted of
 # Git
 
 Some of the benefits of Git are:
+
 - Stores data in a file system in a series of snapshots
 - Relies on local operations that allows project work to continue when not online
 - Tracks every change made to files or directories
@@ -22,49 +26,53 @@ Some of the benefits of Git are:
 ## States
 
 Files in Git exist in three main states:
+
 - ### Committed
   - Data is securely stored in a local database.
 - ### Modified
   - File has been changed but not committed to the database.
 - ### Staged
   - Flagged a file’s changed version to be committed in the next snapshot.
-  
+
 ### Initial Configuration
 
 After installing Git, settings for identity and text editors should be configured using `$ git config`.
 
 Setting the user name to 'John Doe' would be accomplished by:
+
 ```
 $ git config --global user.name "John Doe"
 ```
 
 Setting the email address to 'email@email.com' is done by:
+
 ```
 $ git config --global user.email "email@email.com"
 ```
 
 Setting the text editor to emacs...
+
 ```
 $ git config --global core.editor emacs
 ```
 
-The use of *--global* in these commands applies the settings accross the whole system.
-  
+The use of _--global_ in these commands applies the settings accross the whole system.
+
 ## Useful Git Commands in the Terminal
 
-| #### Command | #### Description |
-| --- | --- |
-| `$ git config --list` | Checks the current settings |
-| `$ git clone https://github.com/test` | Creates directory named test with copies of all files in the project |
-|  | Also checks out a copy of the newest version for editing. |
-| `$ git add filename` | File filename is tracked and staged for committing |
+| #### Command                               | #### Description                                                       |
+| ------------------------------------------ | ---------------------------------------------------------------------- |
+| `$ git config --list`                      | Checks the current settings                                            |
+| `$ git clone https://github.com/test`      | Creates directory named test with copies of all files in the project   |
+|                                            | Also checks out a copy of the newest version for editing.              |
+| `$ git add filename`                       | File filename is tracked and staged for committing                     |
 | `$ git commit -m "note about changes made` | Commits the changes and records what you did within the commit message |
-| `$ git push origin main` | Pushes changes from the local “main” branch to the remote repository |
-| `$ git status` | Shows information regarding changes to be committed |
+| `$ git push origin main`                   | Pushes changes from the local “main” branch to the remote repository   |
+| `$ git status`                             | Shows information regarding changes to be committed                    |
 
 After cloning a project, all files in a checked out (or working) copy of a project file will be either in a **tracked** or **untracked** state.
-- **Tracked** - Files can be modified, unmodified, or staged; they were part of the most recent file snapshot.
-- **Untracked** - Files were not in the last snapshot and do not currently reside in the staging area.
 
+- **Tracked** - Files can be modified, unmodified, or staged. They were part of the most recent file snapshot.
+- **Untracked** - Files were not in the last snapshot and do not currently reside in the staging area.
 
 [Back to Main](README.md)
