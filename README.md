@@ -6,7 +6,7 @@
 
 ### My name is William Moreno.
 
-_...but you can call me Bill_
+_...but you can call me "Bill"._
 
 ### About Me
 
