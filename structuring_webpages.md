@@ -29,4 +29,34 @@ Prior to HTML5, web page authors mostly used `<div>` elements when creating all 
 - `<aside>` - contains content related to the entire page
 - `<section>` - groups related content together
 
+## Extra Markup
+
+**Comments** - Used to add a comment to your code that will not display in the browser. `<!-- comment-->`
+
+**ID Attribute** - Every HTML element can carry an id attribute to uniquely identify it. The value should start with a letter or underscore and must be unique. _Added to the opening tag._ `id="value"`
+
+**Class Attribute** - Every HTML element can carry an class attribute to identify it, often as part of a group of elements. Several elements can carry the same class attribute. _Added to the opening tag._ `class="value"`
+
+## Block & Inline Elements
+
+Some elements will always appear in blocks and others will appear "inline". There are also ways to group text and elements in a manner to appear either as blocks or inline.
+
+### Block Element Examples
+
+- `<h1>`
+- `<p>`
+- `<ul>`
+- `<li>`
+
+  - The `<div>` element allows the grouping of a set of elements together into one block-level box.
+
+### Block Element Examples
+
+- `<a>`
+- `<b>`
+- `<em>`
+- `<img>`
+
+  - The `<span>` element is the inline equivalent of the `<div>`.
+
 [Back to Main](README.md)
