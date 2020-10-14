@@ -16,6 +16,8 @@ I have a background in the manufacturing field, both for the trucking and the ae
 
 ## Table of Contents
 
+---
+
 - [Markdown](markdown.md)
 - [Coder's Computer](coders_computer.md)
 - [Revisions in the Cloud](revisions_in_the_cloud.md)
