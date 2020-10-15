@@ -23,7 +23,7 @@ I have a background in the manufacturing field, both for the trucking and the ae
 - [Revisions in the Cloud](revisions_in_the_cloud.md)
 - [Structuring Webpages](structuring_webpages.md)
 - [Styling with CSS](css_styling.md)
-- [Reading 6a]()
+- [Dynamic Pages with JavaScript](dynamic_pages.md)
 - [Reading 6b]()
 - [Reading 7]()
 - [Reading 8]()
