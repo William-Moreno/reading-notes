@@ -25,5 +25,5 @@ I have a background in the manufacturing field, both for the trucking and the ae
 - [Styling with CSS](css_styling.md)
 - [Dynamic Pages with JavaScript](dynamic_pages.md)
 - [Computer Architecture](computer_architecture.md)
-- [Reading 7]()
+- [Programming with JavaScript](programming_javascript.md)
 - [Reading 8]()
