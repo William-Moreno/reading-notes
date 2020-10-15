@@ -49,7 +49,7 @@ Expressions rely on **operators** to create a single value from multiple values.
 - **Arithmetic** - Perform basic math.
   - `+` `-` `/` `*` `++` `--` `%`
   - Arithmetic operators follow the standard order of execution
-- **String** - Combine or \*concatenate two strings.
+- **String** - There is only one string operator, `+` and it combines or _concatenates_ two strings.
   - `greeting = 'Hi ' + 'Molly';` makes the value of greeting = 'Hi Molly'
   - When numbers and strings are added together the result is a string. If any other arithmetic operators are applied to a string the result will be `NaN`, or 'Not a Number'
 
