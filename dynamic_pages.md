@@ -76,3 +76,5 @@ When naming or dealing with variables it is important to remember that JavaScrip
 ```
 randomNumber !== randomnumber !== RandomNumber !== RANDOMNUMBER !== RaNdOmNuMbEr
 ```
+
+[Back to Main](README.md)
