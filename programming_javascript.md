@@ -55,7 +55,7 @@ Expressions rely on **operators** to create a single value from multiple values.
 
 **Functions** are a series of statements grouped together into a single block that instruct the browser to perform a certain task. A function must be **declared** or defined. having declared a function we can then **call** that function any time we want the computer to perform that task.
 
-Declaration of a function requires the function keyword, a function name we designate, possibly a list of parameters the function requires and a series of one or more statements located inside curly brackets. to perform the given task. An example might be:
+Declaration of a function requires the function keyword, a function name we designate, possibly a list of parameters the function requires and a series of one or more statements located inside curly brackets. to perform the given task. _An example might be:_
 
 ```
 function sayHello() {
