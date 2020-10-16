@@ -2,7 +2,7 @@
 
 ---
 
-![Profile Pic](Bill-Pic.jpg)
+![Profile Pic](billprofile1020.jpg)
 
 ### My name is William Moreno.
 
