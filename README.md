@@ -10,7 +10,15 @@ _...but you can call me "Bill"._
 
 ### About Me
 
-I have a background in the manufacturing field, both for the trucking and the aerospace industries. I am now pursuing my desire to build a successful career in the software development field.
+I have over 20 combined years of experience in both the aerospace and trucking manufacturing
+fields, including team leadership roles. During that time, I also coordinated with management, engineers,
+quality assurance and process improvement personnel to ensure safety, reduce defects and improve
+processes and efficiency within my areas of responsibility.
+
+I am now in the process of retraining to transition into a career in the software
+development/engineering industry, where I believe my attention to detail and experience driving out defects
+and improving processes will be an asset. I am currently focused on HTML, CSS and JavaScript and
+debating between specializing in Full-Stack JavaScript or Python.
 
 [My GitHub](https://github.com/William-Moreno)
 
