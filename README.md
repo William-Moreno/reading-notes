@@ -51,7 +51,7 @@ Reading notes from Code 201: _Foundations of Software Development_.
 - [Forms and Events](class-09.md)
 - [JS Debugging](class-10.md)
 - [Assorted Topics](class-11.md)
-- [Docs for the HTML <canvas> Element & Chart.js](class-12.md)
+- [Docs for the HTML `<canvas>` Element & Chart.js](class-12.md)
 - [Local Storage](class-13.md)
 - [CSS Transforms, Transitions and Animations](class-14.md)
 - [_What Google Learned About Teams_](class-15.md)
