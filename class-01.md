@@ -103,3 +103,27 @@ Most elements can have one or more **attributes** such as _class_ or _id_ which 
 | &reg;         | `&reg;`    | _Registered trademark_ |
 | &trade;       | `&trade;`  | _Trademark_            |
 | &divide;      | `&divide;` | _Division sign_        |
+
+## HTML5 Layout
+
+HTML5 introduced a new set of elements that help define the stucture of a web page. Where traditional layouts typically consisted of multiple `<div>` elements, the use of these new _semantic_ tags or elements provides clearer code. They also work better with screen readers utilized by users with visual impairments. `<div>` is still used, but not nearly as much now.
+
+The new HTML5 elemanets indicate the purpose of different parts of a web page and help to describe its structure. Examples are:
+
+- `<header>` Header. Appears at the top of pages and sometimes even the top of an `<article>` or `<section>` within the page.
+- `<footer>` Footer. Appears at the bottom of pages and sometimes even the bottom of an `<article>` or `<section>` within the page.
+- `<nav>` Navigation. Typically used for primary site navigation.
+- `<article>` Article. A container for any section of the page that could feasibly stand alone. There may be several on any given page.
+- `<aside>` Aside. A container for content related to the entire page. Alternatively, if it is located within an article container, it contains content related to that article.
+- `<section>` Section. Groups related content together and commonly has its own heading.
+
+## Process & Design
+
+When creating a new web page, it is important to understand who our target audience is. _Why will they come to our site? What information are the looking for? How often are they likely to return?_
+
+Popular design tools used in the planning websites are **site mapping** and **wireframing**.
+
+- Site maps allow us to plan the structure of a website
+- Wireframes allow us to organize the information that needs to go on a page
+
+_Design is about communication._ **Visual hierarchy** helps users understand what we are trying to tell them. We can differentiate between separate information using **size**, **color** and **styling**. **Grouping** and **similarity** can help simplify the information we present.
