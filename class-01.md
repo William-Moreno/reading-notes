@@ -91,7 +91,7 @@ Most elements can have one or more **attributes** such as _class_ or _id_ which 
 - `<div>` and `<span>` elements allow us to group block-level and inline elements together, respectively
 - `<iframes>` allow other web pages to be shown through windows "cut out"" of the web page
 - The `<meta>` tag is an **open tag** located in the `<head>` tag and contains information about the web page. It is not visible to users but can convey information about the page to search engines, who created the page, or if the page is time-sensitive
-- **Escape characters** are used to include special charcters in web pages. Some examples are:
+- **Escape characters** are used to include special characters in web pages. Some examples are:
 
 | **Character** | **CODE**   | **Description**        |
 | ------------- | ---------- | ---------------------- |
