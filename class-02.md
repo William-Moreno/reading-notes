@@ -218,7 +218,7 @@ There are 5 types of operators that allow us to create single values from single
 | Arithmetic   | These perform basic math. For example `+` , `-` , `*` , etc                                                                | `area = 3 * 2;`               |
 | String       | `+` is the **only** string operator and allows us to combine strings                                                       | `greeting = 'Hi ' + 'Molly';` |
 | Comparison   | These compare two values and returns a _Boolean_ value, either **true** or **false**. Examples are `>` , `===` , `!=`, etc | `buy = 3 > 5;`                |
-| Logical      | These combine expressions and, again, return a Boolean value. These operators include `&&` _(and)_ and `                   |                               | ` _(or)_ | `buy = (5 > 3) && (2 < 4);` |
+| Logical      | These combine expressions and, again, return a Boolean value. These include operators such as `&&` _(and)_ and `!` _(not)_ | buy = (5 > 3) && (2 < 4);`    |
 
 ## Decisions & Loops
 
