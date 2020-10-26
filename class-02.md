@@ -1,36 +1,38 @@
 # Introductory HTML and JavaScript
+
 ---
 
 ## HTML Text
-In HTML we add *tags* to the content of the page that provide additional meaning and also help define the appropriate structure for the page. This is known as **markup**.
+
+In HTML we add _tags_ to the content of the page that provide additional meaning and also help define the appropriate structure for the page. This is known as **markup**.
 
 HTML includes both **structural tags** and **semantic tags**. Structural tags give the content structure within the page, such as whether text should be displayed as a heading or as a paragraph. They can add line breaks or subscript as well.
 Semantic tags provide various bits of information about where emphasis should be placed in a sentence or when text is a definition or is an acronym, for example.
 
 ### Structural Tags Examples
 
-| **Tag** | **Description** |
-| --- | --- |
+| **Tag**     | **Description**           |
+| ----------- | ------------------------- |
 | `<h1>-<h6>` | Headings size 1 through 6 |
-| `<p>` | Paragraph |
-| `<b>` | Bold |
-| `<i>` | Italics |
-| `<sup>` | Superscript |
-| `<sub>` | Subscript |
-| `<br />` | Line break |
-| `<hr />` | Horizontal |
+| `<p>`       | Paragraph                 |
+| `<b>`       | Bold                      |
+| `<i>`       | Italics                   |
+| `<sup>`     | Superscript               |
+| `<sub>`     | Subscript                 |
+| `<br />`    | Line break                |
+| `<hr />`    | Horizontal                |
 
 ### Semantic Tags Examples
 
-| **Tag** | **Description** |
-| --- | --- |
-| `<em>` | Shows emphasis of a word or words in text by italicizing them |
-| `<strong>` | Indicates a strong importance of the text contained within by showing them in bold |
-| `<blockquote>` | Indicates longer quotes, displaying them in indented paragraphs |
-| `<q>` | for shorter quotes contain with normal text |
-| `<abbr>` | Uses the *title* attribute to expand the abbreviation or acronym |
-| `<del>` | Used to show content that has been removed from the page with strikethrough text |
-| `<dfn>` | Indicates the defining instance of a new term. *(some browsers put these in italics)* |
+| **Tag**        | **Description**                                                                       |
+| -------------- | ------------------------------------------------------------------------------------- |
+| `<em>`         | Shows emphasis of a word or words in text by italicizing them                         |
+| `<strong>`     | Indicates a strong importance of the text contained within by showing them in bold    |
+| `<blockquote>` | Indicates longer quotes, displaying them in indented paragraphs                       |
+| `<q>`          | for shorter quotes contain with normal text                                           |
+| `<abbr>`       | Uses the _title_ attribute to expand the abbreviation or acronym                      |
+| `<del>`        | Used to show content that has been removed from the page with strikethrough text      |
+| `<dfn>`        | Indicates the defining instance of a new term. _(some browsers put these in italics)_ |
 
 ## Introducing CSS
 
@@ -55,13 +57,13 @@ CSS can be internal or external _(sometimes even both)_ to the HTML document. Ho
 
 ## Common CSS Selectors
 
-| **Selector Type** | **Matched Target**                                | **Example**        |
-| ----------------- | ------------------------------------------------- | ------------------ |
-| _universal_       | all elements on page                              | **\***             |
-| _type_ or *element*           | element names                                     | **h1, p, article** |
-| _class_           | elements with specified class attribute           | **.class**         |
-| _ID_              | elements with specified id attribute              | **\#id**           |
-| _descendant_      | elements which are descendants of another element | **li>a**           |
+| **Selector Type**   | **Matched Target**                                | **Example**        |
+| ------------------- | ------------------------------------------------- | ------------------ |
+| _universal_         | all elements on page                              | **\***             |
+| _type_ or _element_ | element names                                     | **h1, p, article** |
+| _class_             | elements with specified class attribute           | **.class**         |
+| _ID_                | elements with specified id attribute              | **\#id**           |
+| _descendant_        | elements which are descendants of another element | **li>a**           |
 
 ## CSS Rules Cascade
 
@@ -124,16 +126,21 @@ _The . in the statement is known as the_ **member operator**.
 ### Comments
 
 Comments should be used in certain areas to explain what our code does. There are two ways to denote comments when coding JavaScript: **single line** and **multi line**.
+
 - Single line comments are added to the end of a line and take the form of:
+
 ```JavaScript
 // comment goes here
 ```
+
 - Multi line comments tend to span 2 or more complete lines and are defined like this:
+
 ```JavaScript
 /* first comment line
 second comment line
 third comment line. */
 ```
+
 Sometimes these comments can also be used to temporarily "turn off" part of our code while we are writing it, testing it or debugging it...
 
 ## Variables
@@ -165,29 +172,35 @@ When naming or dealing with variables it is important to remember that JavaScrip
 ```
 randomNumber !== randomnumber !== RandomNumber !== RANDOMNUMBER !== RaNdOmNuMbEr
 ```
+
 ### The 6 Rules for Naming Variables
+
 1. The name **must** begin with a letter, dollar sign or underscore. Must **not** start with a number.
 1. The name can include letters, numbers, dollar signs and underscores. We must **not** use a dash or a period in a variable name.
 1. We cannot use **keywords** or **reserved** words.
-1. All variables are case-sensitive. While they would be technically separate variables, it is bad practice to create two variable such as *score* and *Score*.
-1. We should use a name that describes the kind of information the variable stores. For instance: *firstName*.
+1. All variables are case-sensitive. While they would be technically separate variables, it is bad practice to create two variable such as _score_ and _Score_.
+1. We should use a name that describes the kind of information the variable stores. For instance: _firstName_.
 1. When a variable name is made up of multiple words, they should be written in "**camelCase**".
 
 ### Arrays, Expressions and Operators
 
-Arrays are special types of variables that store **lists** of related information in a single variable. They are often created with an *array literal* in the following manner, rather than with an *array constructor*:
+Arrays are special types of variables that store **lists** of related information in a single variable. They are often created with an _array literal_ in the following manner, rather than with an _array constructor_:
+
 ```Javascript
 var myFamily;
 myFamily = ["Laurel","Riley","Alexis"];
 ```
+
 This is an array with a length of 3. However, since arrays are "0-based" the first position, or **index**, in this array is actually 0 and the last is 2.
 
 Thus, the value of `myFamily[1]` would be `"Riley"`.
 
 Arrays are very helpful when we don't know how many items a list might contain. Values can be added to, removed from and changed in an array. Changing a value already in an array is done with a command like:
+
 ```JavaScript
 myFamily[0] = "Lolo";
 ```
+
 ### Expressions & Operators
 
 **Expressions** rely on things called **operators** and result in a single value and basically come in two types:
@@ -199,17 +212,17 @@ myFamily[0] = "Lolo";
 
 There are 5 types of operators that allow us to create single values from single or multiple values. They are:
 
-| **Operator** | **Description** | **Example** |
-| --- | --- | --- |
-| Assignment | `=` This assigns a value to a variable | `color = 'beige';` |
-| Arithmetic | These perform basic math. For example `+` , `-` , `*` , etc | `area = 3 * 2;` |
-| String | `+` is the **only** string operator and allows us to combine strings | `greeting = 'Hi ' + 'Molly';` |
-| Comparison | These compare two values and returns a *Boolean* value, either **true** or **false**. Examples are `>` , `===` , `!=`, etc | `buy = 3 > 5;` |
-| Logical | These combine expressions and, again, return a Boolean value. These operators include `&&` *(and)* and `||` *(or)* | `buy = (5 > 3) && (2 < 4);` |
+| **Operator** | **Description**                                                                                                            | **Example**                   |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Assignment   | `=` This assigns a value to a variable                                                                                     | `color = 'beige';`            |
+| Arithmetic   | These perform basic math. For example `+` , `-` , `*` , etc                                                                | `area = 3 * 2;`               |
+| String       | `+` is the **only** string operator and allows us to combine strings                                                       | `greeting = 'Hi ' + 'Molly';` |
+| Comparison   | These compare two values and returns a _Boolean_ value, either **true** or **false**. Examples are `>` , `===` , `!=`, etc | `buy = 3 > 5;`                |
+| Logical      | These combine expressions and, again, return a Boolean value. These operators include `&&` _(and)_ and `                   |                               | ` _(or)_ | `buy = (5 > 3) && (2 < 4);` |
 
 ## Decisions & Loops
 
-*Conditional* statements allow our code to make decisions about which code to execute next. To do this, it utilizes comparison operators such as (`===` , `!==` , `<` , `>=` , *etc.*) to compare two operands. Logical operators allow us to combine more than one set of comparison operators using logical operators (`&&` , `||` , `!`).
+_Conditional_ statements allow our code to make decisions about which code to execute next. To do this, it utilizes comparison operators such as (`===` , `!==` , `<` , `>=` , _etc._) to compare two operands. Logical operators allow us to combine more than one set of comparison operators using logical operators (`&&` , `||` , `!`).
 
 Comparison operators return single values of `true` or `false`. Logical operators allow us to compare the results of more than one comparison operator.
 
@@ -222,10 +235,10 @@ Logical operations are evaluated left to right. If the first operation provides 
 - Logical OR (`||`)
   - **true** and anything - the evaluation cannot possibly be false.
 
-
 `if` statements allow us to execute a block of code only if a condition is true or skip past the block to the next line of code if the condition is false.
 
 Example:
+
 ```JavaScript
 if (score >= 50) {
   congratulate();
@@ -235,6 +248,7 @@ if (score >= 50) {
 `if ... else` statements allow us to execute one set of code if a condition is true and a different set if the condition is false.
 
 Example:
+
 ```JavaScript
 if (score >= 50) {
   congratulate();
@@ -247,16 +261,19 @@ else {
 ## Git Commit Messages
 
 Teams should agree on a commit message convention in order to create a useful revision history. This convention should address:
+
 - **style** - Markup syntax, wrap margins, grammar, capitalization and punctuation to help remove guesswork.
-- **Content** - What info should a commit message contain and what should it *not* contain.
+- **Content** - What info should a commit message contain and what should it _not_ contain.
 - **Metadata** - How should tracking IDs, pull request numbers, etc. be referenced?
 
 ### 7 Rules of a Great Git Commit Message...
+
 1. Separate subject from body with a blank line
 1. Limit subject line to 50 characters
 1. Capitalize subject line
 1. Do not end the subject line with a period
-1. Use the imperative mood in the subject line *(Subject should complete the sentence "If applied, this commit will..." and make sense.)*
+1. Use the imperative mood in the subject line _(Subject should complete the sentence "If applied, this commit will..." and make sense.)_
 1. Wrap the body at 72 characters
 1. Use body to explain what and why, not how
 
+[Back to Main](README.md)
