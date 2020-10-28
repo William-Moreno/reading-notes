@@ -22,11 +22,11 @@ Links are created using the `<a>` element. Users can click on anything between t
 
 Link text _(the text between the `<a></a>` tags)_ should be clear and specific and should explain where visitors will be taken if they click on it.
 
-**Linking to Other Sites**
+### Linking to Other Sites
 
 When we link to a different website, we insert the full web address, or **absolute** URL in the `href` attribute. URL stands for Uniform Resource Locator and every web page has its own. If no specific path follows the domain name, the site will display the homepage.
 
-**Linking to Other Pages on the Same Site**
+### Linking to Other Pages on the Same Site
 
 When we link to other pages within the same site, we can omit the domain name and use a shorthand known as a **relative** URL in the `href` attribute. Pages in the same folder as the current page need only be specified by file name. When the target page is in a different folder of the directory the relative URL will be slightly more complex.
 
@@ -41,16 +41,29 @@ Grandchild Folder | Use the name of the child folder, forward slash, name of the
 | Parent Folder | Use `../` to indicate the folder above the current one, then the file name. |
 | Grandparent Folder | Use `../../` to indicate the folder above the folder above the current one and then the file name. |
 
-**Email Links**
+### Email Links
 
 To create a link that opens the user's email program and addresses an email to a specified recipient, we insert `mailto:specifiedRecipient@email.email` into the `href` attribute of our `<a>` tag.
 
-**Opening Links in a New Window**
+### Opening Links in a New Window
 
 To open a link in a new window, we use the `target` attribute in our `<a>` tag, with a value of `_blank`. Generally, we should avoid opening links in new windows, but if we do, it is good practice to inform users that the link will open a new window before they click on it.
 
-**Linking to Specific Parts of the Same Page**
+### Linking to Specific Parts of the Same Page
 
 To link to specific parts of our page we assign id attributes to the desired destination tags. Then in the `href` attribute of our `<a>` tag we simply insert `#id-assigned`. The link will now navigate to the element with the specified id attribute. This will work to reference specifically identified elements of other pages as long as `#id-assigned` is added to the end of whatever URL we place in the `href` attribute.
+
+## CSS Layouts
+
+CSS treats each HTML element as being in either a **block-level** box or an **inline** box. Block-level elements start on a new line and inline elements flow in between surrounding text. If a block-level element sits inside another block-level element, the outer element is known as the **containing** or **parent** element.
+
+### Position
+
+Using the `position:` property, CSS allows us to control the layout of a page in the following ways: normal flow, relative positioning, absolute and fixed.
+
+- **Normal Flow** - _(the default behavior)_ Every block-level element will appear on a new line, even if there is enough space for two elements to sit side-by-side.
+- **Relative Positioning** - Moves an element in relation to where is would normally have been positioned.
+- **Absolute Positioning** - Takes an element out of normal flow and positions it in relation to its containing element. It will no longer affect the positioning of any surrounding elements.
+- **Fixed Positioning** - This is a form of absolute positioning that takes an element out of normal flow and positions it in relation to the browser window as opposed to its containing element. Further, these elements will persist in their locations when the user scrolls the page.
 
 [Back to Main](README.md)
