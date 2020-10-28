@@ -163,7 +163,24 @@ JavaScript can convert data types behind the scenes. Because JavaScript uses **w
 
 Due to type coercion, every value in JavaScript can be treated as if it were true or false.
 
-**Falsy** values are treated as if they are `false` and can also be treated as the number 0.
+**Falsy** values are treated as if they are `false` and can also be treated as the number 0. _Examples:_
+
+- Boolean `false`
+- Number 0
+- Empty string
+- NaN
+- Variable with no value assigned to it
+
+**Truthy** values are treated as if they are `true` and can also be treated as the number 1. _Examples:_
+
+- Boolean `true`
+- Numbers other than 0
+- Strings with content
+- Number calculations
+
+### Short Circuit Values
+
+Logical operators are processed left to right. They short-circuit (stop) as soon as they have a result - but they return the value that stopped the processing (not necessarily true or false).
 
 ## Loops
 
