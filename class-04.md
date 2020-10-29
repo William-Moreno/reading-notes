@@ -87,4 +87,52 @@ If a function requires specific information in order to perform its task, there 
 
 Finally, by including the `return` keword in the statements of the function we can have the called function return a value to the code that _called_ the function and then exit the function, ignoring any subsequent statements remaining below it in the block. Functions can also return more than one value using an **array**.
 
+### Anonymous Functions & Function Expressions
+
+Because _expressions_ produce values, if a _function_ is placed where a browser expects to find an expression, then it gets treated as an expression and is known as a **function expression**. In function expressions, the name is usually omitted. Functions with no name are called **anonymous functions**. In the example below, a function is stored in a variable which can be called just like any other function:
+
+```JavaScript
+var area = function(width, height) {
+ return width * height;
+};
+
+var size = area(3, 4);
+```
+
+### Immediately Invoked Function Expressions
+
+(IIFE) _Pronounced "iffy"_, these functions are not given a name and are executed once as the interpreter comes accross them. The function is bounded by parentheses called **grouping operators**. Their purpose is to ensure the interpreter treats the function as an expression. Paired parentheses between the closing curly brace and the grouping operator are called **final paratheses** and they tell the interpreter to call the function immediately.
+
+```JavaScript
+var area = (function() {
+ var width = 3;
+ var height = 2;
+ return width * height;
+}());
+```
+
+Anonymous functions and IIFEs are typically used for code that only needs to run once within a task, rather than being repeatedly called.
+
+- As an argument when a function is called (to calculate a value for that function)
+- To assign the value of a property to an object
+- In event handlers and listeners to perform a task when an event occurs
+- To prevent conflicts between two scripts that might use the same variable names
+
+IIFEs are commonly used as a _wrapper_ around a set of code. variables declared within are effectively protected from variables in other scripts which might have the same name(s) due to the concept of **scope**.
+
+### Variable Scope
+
+THe location where we declare variables affects where they can be used within our code. Variables declared within a function are called **local variables** or **function-level** and can only be used inside that function. This is a variable's scope.
+
+Variables created outside of functions can be used anywhere in the script. They are called **global variables** and have **Global scope**. Global variables take up more memory than local variables and also increase the risk of naming conflicts.
+
+## 6 Reasons for Pair Programming
+
+1. **Greater Efficiency** - Though pair programming takes slightly longer, it is proven to produce higher-quality code that requires less troubleshooting later. Therefore, it is more efficient that two people working on separate features. solutions can be reached faster through the sharing of ideas and discussion.
+1. **Engaged Collaboration** - When 2 programmers focus on the same code, the experience is more engaging and both programmers are more focused. They rely on each other and can often find solutions together without needing additional help.
+1. **Learning From Fellow Students** - because everyone has different approaches to solving problems, pair programming exposed each developer to new solutions to problems. Teammates often have strengths and weaknesses in differing areas. This allows the partner with more experience to teach the partner with less experience about a certain skill. This helps solidify understanding
+1. **Social Skills** - Because communication is key in pair programming, practicing it can help develop interpersonal skills. Being able to work well with others is a valuable asset when searching for employment in the field.
+1. **Job Interview Readiness** - A common step in many interviews involves pair programming between a current employee and an applicant. This allows companies to see how the prospective employee would fit into their team. Pair programming strengthens these skills.
+1. **Work Environment Readiness** - Many companies that utilize pair programming expect to have to train new employees on how they operate. Code Fellows graduates who are already familiar with how pairing works can hit the ground running at a new job.
+
 [Back to Main](README.md)
