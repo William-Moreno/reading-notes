@@ -33,13 +33,14 @@ When we link to other pages within the same site, we can omit the domain name an
 On larger sites, we should organize our code by placing the pages for different sections into new directories. The directory structure for a website resembles and uses the terminology of a family tree. The top level is known as the **root** folder. The root contains all of the files and folders (which in turn contain other files) for the website. Always in the root, and often in the children folders, there will be an index.html file that is the homepage for the site or that section of the site. Web servers are commonly set up to return the index.html file if no other file is specified. When we understand the structure of our directory and the relationships of the folders and files within, we can use the correct shorthand to navigate with links.
 
 **Navagating Site Pages with Relative URLs**
-| **Relative Link Type** | **Shorthand** |
-| --- | --- |
-| Same Folder | When linking to a file in the same folder, just use the file name. |
-| Child Folder | For a child folder, use the name of the child folder, followed by a foward slash, then the file name. |
-Grandchild Folder | Use the name of the child folder, forward slash, name of the grandchild folder, forward slash, then the file name. |
-| Parent Folder | Use `../` to indicate the folder above the current one, then the file name. |
-| Grandparent Folder | Use `../../` to indicate the folder above the folder above the current one and then the file name. |
+
+| **Relative Link Type** | **Shorthand**                                                                                                      |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Same Folder            | When linking to a file in the same folder, just use the file name.                                                 |
+| Child Folder           | For a child folder, use the name of the child folder, followed by a foward slash, then the file name.              |
+| Grandchild Folder      | Use the name of the child folder, forward slash, name of the grandchild folder, forward slash, then the file name. |
+| Parent Folder          | Use `../` to indicate the folder above the current one, then the file name.                                        |
+| Grandparent Folder     | Use `../../` to indicate the folder above the folder above the current one and then the file name.                 |
 
 ### Email Links
 
@@ -65,5 +66,25 @@ Using the `position:` property, CSS allows us to control the layout of a page in
 - **Relative Positioning** - Moves an element in relation to where is would normally have been positioned.
 - **Absolute Positioning** - Takes an element out of normal flow and positions it in relation to its containing element. It will no longer affect the positioning of any surrounding elements.
 - **Fixed Positioning** - This is a form of absolute positioning that takes an element out of normal flow and positions it in relation to the browser window as opposed to its containing element. Further, these elements will persist in their locations when the user scrolls the page.
+
+## JavaScript Functions
+
+**Functions** are a series of statements grouped together into a single block that instruct the browser to perform a certain task. A function must be **declared** or defined. having declared a function we can then **call** that function any time we want the computer to perform that task.
+
+Declaration of a function requires the function keyword, a function name (also called an **identifier**) we designate, possibly a list of parameters the function requires and a series of one or more statements located inside curly brackets to perform the given task. An example might be:
+
+```JavaScript
+function sayHello() {
+ document.write('Hello!');
+}
+```
+
+- `sayHello` is the function's name
+- this function requires no parameters
+- `document.write('Hello!);` is the statement the function will execute
+
+If a function requires specific information in order to perform its task, there will be a list of **parameters** inside the () following the function's name. For instance, in the case of `getArea(width,height)`, the getArea function would need the values for width and height supplied to it in order to execute its task. When we supply this information is is known as passing **arguments** into the function. In the case above, we would pass in values for _width_ and _height_.
+
+Finally, by including the `return` keword in the statements of the function we can have the called function return a value to the code that _called_ the function and then exit the function, ignoring any subsequent statements remaining below it in the block. Functions can also return more than one value using an **array**.
 
 [Back to Main](README.md)
