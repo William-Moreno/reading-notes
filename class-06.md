@@ -1,1 +1,0 @@
-# Reading assignment 6
