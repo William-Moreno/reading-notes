@@ -96,6 +96,67 @@ The **D**ocument **O**bject **M**odel *(DOM)*specifies how browsers should creat
 
 ### The DOM Tree
 
-As a page loads, the browser creates a **DOM Tree** model of that page which it stores in its memory. These models consist of four main types of nodes.
+As a page loads, the browser creates a **DOM Tree** model of that page which it stores in its memory. These models consist of four main types of **nodes**. Each node is an object with properties and methods. Scripts access and update the DOM tree and make changes to only the DOM tree whcih are then reflected in the browser. The source HTML file remains unaltered. The four types of nodes are:
+
+- **The Document Node** - This node is always at the top of the tree and represents the entire page. It is the starting point for all visits to the DOM tree. Every element, attribute and piece of text in the HTML is represented by its own individual **DOM Node**.
+- **Element Nodes** Each HTML element describes part of the structure of the HTML page, from headings to paragraphs of text. To access the DOM tree, we start by looking for elements. Once we have accessed them, we can access their text and attribute nodes. Relationships between the document and all of the element nodes are described using the terminology of a family tree: parents, children, siblings, etc. _(Every node is a descendant of the document node)_.
+- **Attribute Nodes** - Opening tags of HTML elements can carry attributes which are represented by attribute nodes in the DOM tree. These nodes are _not_ children of the elements. Once an element is accessed, we can use methods and properties to read or change that element's attributes.
+- **Text Nodes** - Once we have access to an element node, we can then reach the text nodes within that element. Text nodes cannot have _children_. A text node is always a new branch of the DOM tree and no further branches come off of it.
+
+### Working with the DOM Tree (2 - Steps)
+
+1. Locate the node that represents the element we want to work with.
+1. Use its text content, child elements and attributes.
+
+#### Step 1: Access the Elements
+
+An overview of the two types of methods and properties that access elements, **DOM Queries** and **traversing the DOM**:
+
+- Select an Individual Element Node
+  - Three common ways to select individual elements:
+    1. `getElementById()` - Usesthe value on an element's `id` attribute
+    1. `querySelector()` - Uses a CSS selector, and returns the first matching element
+    1. Traversing Between Element Nodes
+       - `parentNode` - Selects the parent of the current element node
+       - `previousSibling` / `nextSibling` - selects the previous or next sibling from the DOM tree
+       - `firstChild` / `lastChild` - Selects the first or last child of the current element
+- Selecting Multiple Elements _(Nodelists)_
+  - Three common ways to select multiple elements:
+    - `getElementsByClassName()` - Selects all elements that have the specified value for their class attribute
+    - `getElementsByTagName()` - Selects all elements that have the specified tag name
+    - `querySelectorAll()` - Uses a CSS selector to select all matching elements
+
+#### Step 2: Working with Those Elements
+
+When people say the DOM is working with an element, it is actually working with the node that represents that element. Sample methods and properties that work with the elements:
+
+- Access/Update text nodes
+  - `nodeValue` - This property lets us access or update contents of a text node..
+- Work with HTML Content
+  - `innerHTML` - A propetry that allows access to child elements and text content
+  - `textContent` - A property that allows access to only the text content
+  - Several methods which allow us to create, remove, or add nodes to a tree _(known as DOM manipulation)_
+    - `createElement()`
+    - `createTextNode()`
+    - `appendChild()`
+    - `removeChild()`
+- Access or Update Attribute Values
+  - `className` / `id` - (properties) Lets us get or update the value of these attributes
+  - `hasAttribute()` - (method) Checks if an attribute exists
+  - `getAttribute()` - (method) Gets the value of an attribute
+  - `setAttribute()` - (method) Updates the value
+  - `removeAttribute()` - (method) removes the attribute
+
+### Caching DOM Queries
+
+Methods that find elements in the DOM a DOM queries. When we need to work with an element more than once, we should _cache_ the reference location of the element in a variable:
+
+```JavaScript
+var itemOne - getElementById('one');
+```
+
+### Accessing Elements
+
+DOM queries can return a single element or a NodeList, which is a group of elements. These node lists are collections of nodes and they are similar to arrays in that they are 0-indexed lists.
 
 [Back to Main](README.md)
