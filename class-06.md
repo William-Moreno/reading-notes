@@ -202,4 +202,28 @@ Example DOM queries that return NodeLists:
 
 ### Selecting Elements from NodeLists
 
+There are two ways to select an element from a NodeList: The `item()` method and array syntax. Both require the index number of the desired element. Array syntax is preferred over the `item()` method however because it is faster. Store the NodeList in a variable if it will be repeatedly used.
+
+```JavaScript
+var elements = document.getElementsByClassName('hot');
+if (elements.length >= 1) {
+   var firstItem = elements[0];
+}
+```
+
+1. a NodeList containing elements with a class value of hot is created and stored in a variable called elements
+1. if there are at least one values in the NodeList, run the code in the `if` statement
+1. get the first element from the NodeList ([0])
+
+### Repeating Actions for an Entire NodeList
+
+We can loop through each node in a NodeList and apply the same statements to each. For instance the following gathers all list items with a class attribute of 'hot' and changes them to 'cool'.
+
+```JavaScript
+var hotItems - document.querySelectorAll('li.hot');
+for (var i = 0; i < hotItems.length; i++) {
+   hotItems[i].className = 'cool';
+}
+```
+
 [Back to Main](README.md)
