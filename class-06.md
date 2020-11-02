@@ -309,7 +309,7 @@ Sample methods than can be used to manipulate these values:
 | `getAttribute()`    | gets the value of the attribute                      |
 | `hasAttribute()`    | checks if the element node has a specified attribute |
 | `setAttribute()`    | sets the value of an attribute                       |
-| `removeAttribute()  | removes an attribute from an element node            |
+| `removeAttribute()` | removes an attribute from an element node            |
 | `className`         | gets or sets the value of the `class` attribute      |
 | `id`                | gets or sets the value of the `id` attribute         |
 
