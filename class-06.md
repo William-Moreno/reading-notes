@@ -226,4 +226,14 @@ for (var i = 0; i < hotItems.length; i++) {
 }
 ```
 
+### Traversing the DOM
+
+Five properties can be used on an element to select another element with respect to the current element. This is known as traversing the DOM.
+
+1. `parentNode`
+1. `previousSibling`
+1. `nextSibling`
+1. `firstChild`
+1. `lastChild`
+
 [Back to Main](README.md)
