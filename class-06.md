@@ -87,4 +87,15 @@ This notation is most commonly used when:
 
 Functions that are used as methods of an object can still have parameters. When called as methods, arguments are passed to the method just like when we call a regular function.
 
+## Document Object Model
+
+The **D**ocument **O**bject **M**odel *(DOM)*specifies how browsers should create a model of an HTML page and how JavaScript can access and update the contents of a web page while it is in the browser. It is neither part of HTML, nor part of JavaScript, but rather a separate set of rules. These rules cover two primary areas:
+
+1. Making a model of the HTML page. Using the **DOM Tree** model the DOM specifies the way in which the browser should construct the model out of object components.
+1. Accessing and changing the HTML page. THe DOM defines methods and properties to access and update the various objects within its model. This updates what is displayed in the actual browser. The DOM is often called an **Application Programming Interface** or (**API**). Through this, set the rules for what our script can ask the browser about the current model/page, and what it can tell the browser to update on that model/page.
+
+### The DOM Tree
+
+As a page loads, the browser creates a **DOM Tree** model of that page which it stores in its memory. These models consist of four main types of nodes.
+
 [Back to Main](README.md)
