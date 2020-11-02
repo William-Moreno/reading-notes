@@ -159,4 +159,47 @@ var itemOne - getElementById('one');
 
 DOM queries can return a single element or a NodeList, which is a group of elements. These node lists are collections of nodes and they are similar to arrays in that they are 0-indexed lists.
 
+#### Methods that Return a Single Element Node
+
+- `getElementById('id')` - selects an individual element given the value of its id attribute.
+- `querySelector('css selector')` - uses CSS selector syntax that would select one or more elements. This method returns _only the first_ of the matching elements.
+
+#### Methods that Return One or More Elements as a Nodelist
+
+- `getElementsByClassName('class')` - selects one or more elements given the value of their class attribute. **_This method is faster than `querySelectorAll()`._**
+- `getElementsByTagName('tagName')` - selects all elements on the page with the specified tag name. **_This method is faster than `querySelectorAll()`._**
+- `querySelectorAll('css selector')` - uses CSS selector syntax to select one or more elements and returns all of those that match.
+
+### Selecting Individual Elements
+
+`getElementById()` and `querySelector()` both use similar syntax and search an entire document and return individual elements. `getElementById()` is the quickest and most efficient way to access an element. `querySelector()` is very flexible because its parameter is a css selector and therefore it can target many more elements.
+
+```JavaScript
+document.getElementById('one')
+```
+
+`document` refers to the document object, which must be accessed in order to access elements.
+
+`.` is the member operator - "dot notation".
+
+`getElementById()` is the method being employed.
+
+`'one'` is the parameter of the method.
+
+### NodeLists
+
+NodeLists look like arrays and are number like arrays, but they are not actually arrays. They are a type of object called a **collection**.
+Properties and methods exist for NodeLists, notably:
+
+- `length` list the number of items in the NodeList
+- `item()` returns a specific node from the Nodelist when we supply the index number of the item we want. It is not uncommon to use square-bracket array notation when retrieving these items from the list however.
+
+Example DOM queries that return NodeLists:
+
+- `getElementsByTagName()`
+- `getElementsByClassName()`
+- `querySelectorAll()`
+
+### Selecting Elements from NodeLists
+
 [Back to Main](README.md)
