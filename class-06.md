@@ -236,4 +236,81 @@ Five properties can be used on an element to select another element with respect
 1. `firstChild`
 1. `lastChild`
 
+### Adding and Removing HTML Content
+
+There are two different approaches to adding and removing content from a DOM tree. the `innerHTML` property and DOM manipulation. There are security risks associated with `innerHTML` but is is faster and better suited to updating entire fragments. DOM manipulation can be safer, but it requires more code and can be slower by comparison, but it easily targets individual nodes in the DOM.
+
+#### `innerHTML` Property
+
+`innerHTML` can be used on any element node to either retrieve or replace content. The content is provided as a string and can include markup.
+
+1. Create a variable holding the markup
+1. Select the element whose content you want to update
+1. Update content of selected element with the new markup
+
+#### DOM Manipulation Methods
+
+DOM manipulation refers to a set of methods that allow us to create element and text nodes and then attach them to or remove them from the DOM tree.
+
+1. Create new text node
+1. Create new element node
+1. Add text node to element node
+1. Select element you want to ad the new fragment to
+1. Append the new fragment to the selected element
+
+### Three Techniques for Adding HTML to a Web Page.
+
+`document.write()`
+
+- Advantage
+  - Quick, easy way to show beginners how content can be added to a page
+- Disadvantages
+  - It only works when the page initially loads
+  - If you use it after the page loads it can:
+    1. Overwrite the whole page
+    1. Not add the content to the page
+    1. Create a new page
+  - It can cause problems with XHTML pages that are strictly validated
+  - This method is very rarely used by programmers and is generally frowned upon
+
+`element.innerHTML`
+
+- Advantages
+  - Can use it to add a lot of new markup using less code than DOM manipulation methods
+  - It is faster than DOM manipulation when adding a lot of content
+  - It is a simple way to remove all of the content from an element _(using a blank string)_
+- Disadvantages
+  - Should not be used to add content that has come from a user due to potential security risks
+  - Can be difficult to isolate single elements within a larger DOM fragment
+  - Event handlers may no longer work as intended
+
+_DOM Manipulation_
+
+- Advantages
+  - Suited to changing a single element from a DOM fragment where there are many siblings
+  - It does not affect event handlers
+  - Easily allows a script to add elements incrementally
+- Disadvantages
+  - It is slower than `innerHTML` when a lot of changes to content must be made
+  - More code must be written to achieve the same results as `innerHTML`
+
+### Attribute Nodes
+
+Once we have an element node, we can us other properties and methods to access and alter its attributes. _For instance_:
+
+```JavaScript
+document.getElementById('one').getAttribute('class');
+```
+
+Sample methods than can be used to manipulate these values:
+
+| **Method/Property** | **Description**                                      |
+| ------------------- | ---------------------------------------------------- |
+| `getAttribute()`    | gets the value of the attribute                      |
+| `hasAttribute()`    | checks if the element node has a specified attribute |
+| `setAttribute()`    | sets the value of an attribute                       |
+| `removeAttribute()  | removes an attribute from an element node            |
+| `className`         | gets or sets the value of the `class` attribute      |
+| `id`                | gets or sets the value of the `id` attribute         |
+
 [Back to Main](README.md)
