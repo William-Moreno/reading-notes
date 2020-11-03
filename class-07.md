@@ -117,4 +117,53 @@ The keyword `this` is commonly used inside functions and objects. Where a functi
 - **A Method of an Object** - When a function is defined _inside_ an object, it becomes a method. In this case, `this` refers to the containing object.
 - **Function Expression as Method** - If a named function was defined in the global scope, and then it is used as a method of an object, `this` refers to the object it is contained within.
 
+## Arrays
+
+Arrays are a special type of object that hold a related set of key/value pairs, but the key for each value is an index number. We can combine arrays and objects to create complex data structures.
+
+- Arrays can store a series of objects
+- Objects can also hold arrays as values of their properties
+
+## Built-In Objects
+
+There are three groups of built-in objects. They all have a variety of related properties and methods.
+
+1. Browser Object Model
+   - Window
+     - Document
+     - History
+     - Location
+     - Navigator
+     - Screen
+1. Document Object Model
+   - document
+     - element
+     - attribute
+     - text
+1. Gobal JavaScript Objects
+   - String
+   - Number
+   - Boolean
+   - Date
+   - Math
+   - Regex
+
+## Data Types
+
+In JavaScript there are six data types. Five of them are described as simple, or primitive, data types. The sixth is the object and is considered as a complex data type. Simple data types can still have methods and properties. The five simple types are:
+
+1. String (properties and methods of the `String` object can be used on these)
+1. Number (properties and methods of the `Number` oblect can be used on these)
+1. Boolean (while there is a Boolean object, its properties and methods are rarely used)
+1. Undefined (does not have an object)
+1. Null (does not have an object)
+
+## The Date Object
+
+In order to work with dates, we create an instance of the `Date` object. We can then specify the time and date that we want to represent. Once we have create a `Date` object, there are a variety of methods that let us manipulate that object.
+
+```JavaScript
+var today = new Date();
+```
+
 [Back to Main](README.md)
