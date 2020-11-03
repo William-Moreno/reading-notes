@@ -54,4 +54,67 @@ Information in long tables should be broken down into three elements. This helps
 1. `<tbody>` - The body of the table should sit in this element
 1. `<tfoot>` - The footer of the table belongs in this element
 
+## JavaScript Constructor Functions
+
+The `new` keyword and the object constructor create a blank object which we can then add properties and methods to. For example:
+
+```JavaScript
+var hotel = new Object();
+
+hotel.name = 'Quay';
+hotel.rooms = 40;
+hotel.booked = 25;
+hotel.checkAvailability = function() {
+ return this.rooms - this.booked;
+};
+```
+
+### Updating an Object
+
+To update the value of properties, use dot notation or square brackets. These work on objects created in either of the two ways. To delete a property, use the `delete` keyword. The value of properties can be changed or, if the object doesn't already have the property, the property can be added to the object in the following ways:
+
+```JavaScript
+hotel.name = 'Park';
+```
+
+or
+
+```JavaScript
+hotel['name'] = 'Park';
+```
+
+### Creating Many Objects: Constructor Notation
+
+When we want several objects to represent similar things, we can use a function as a template as an object constructor.
+
+Example:
+
+```JavaScript
+function Hotel(name, rooms, booked) {
+ this.name = name;
+ this.rooms = rooms;
+ this.booked = booked;
+ this.checkAvailability = function() {
+  return this.rooms - this.booked;
+ };
+}
+```
+
+You can create instances of the object using the constructor function. The `new` keyword followed by a call to the function creates a new object with properties that were given to the function as arguments.
+
+```JavaScript
+var quayHotel = new Hotel('Quay', 40, 25);
+var parkHotel = new Hotel('Park', 120, 77);
+```
+
+Properties can be added to objects using dot notation. They can even be removed by using the `delete` keyword.
+
+## This
+
+The keyword `this` is commonly used inside functions and objects. Where a function is declared alters what `this` means. It always refers to one object, usually the object in which the function operates.
+
+- **A Function in Global Scope** - when a function is not inside another object or function it is in the global scope. The default object therefore becomes the `window` object, so `this` refers to the `window` object.
+- **A Method of an Object** - When a function is defined _inside_ an object, it becomes a method. In this case, `this` refers to the containing object.
+- **Function Expression as Method** - If a named function was defined in the global scope, and then it is used as a method of an object, `this` refers to the object it is contained within.
+
 [Back to Main](README.md)
