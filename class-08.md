@@ -49,3 +49,53 @@ Liquid layout designs stretch and contract as the user increases or decreases th
   - If the user has a wide window, lines of text can become very long, which makes them harder to read.
   - If the user has a very narrow window, words may be squashed and you can end up with few words on each line.
   - If a fixed width item _(such as an image)_ is in a box that is too small to hold it _(because the user has made the window smaller)_ the image can overflow over the text.
+
+## Layout Grids
+
+Many web designers use a grid structure to help them position items on a page. Grids set consistent proportions and spacing between itemsto create a professional looking design. One widely used layout tool is called the **960 pixel grid**. It is possible to create many different layouts using this one versatile grid. Far from being restricting, a grid:
+
+- can create a continuity between different pages which may use different designs.
+- helps users predict where to find information on various pages.
+- makes it easier to add new content to the site in a consistent manner.
+- helps people collaborate on the design of a site in a consistent way.
+
+A wide range of layouts can be created from a single 960 pixel wide 12 column grid, for example. Each column in a grid has a margin setting. This setting creates a gap between the columns that is twice as wide as the setting.
+
+### CSS Frameworks
+
+CSS frameworks aim to make our life easier by providing the code for common tasks:
+
+- Creating layout grids
+- Styling forms
+- Creating printer-friendly versions of pages
+- and more...
+
+We can include the CSS framework code in our projects rather than writing the CSS from sctratch.
+
+- Advantages
+  -They save us from repeatedly writing code for the same tasks
+  - They will have been tested accross different browser versions
+- Disadvantages
+  - They often require that we use class names in our HTML code that only control the presentation of the page _(rather than describe content)_
+    -In order to satisfy a wide variety of needs, they often contain more code than we need for our particular web page _(bloat)_
+
+#### The 960.GS CSS Framework & Grid
+
+One of the most popular uses of CSS frameworks is in creating grids to layout pages. There are several grid frameworks available, but one of the most popular is the [_960 Grid System_](www.960.gs). It provides a style sheet we can include in our HTML pages by linking to it. Then, all we have to do is provide the appropriate classes to our HTML code and it will create multiple column layout for us.
+
+- link to the 906_12_col.css stylesheet in the `<head>` of the page
+- create a `<div>` to contain the entire page and give it a class of `"container_12"` to indicate that we will be using a 12 column grid
+- we also provide that `<div>` a class of `clearfix` to ensure that browsers know the height of the containing box, because it only contains floated elements
+
+### Multiple Style Sheets
+
+Multiple CSS files can be included in one page. Some authors split their CSS style rules into separate style sheets: one to control the layout and another to control fonts and colors, etc. Some authors subdivde their style sheets roles into even smaller scopes, in a more **modular** approach.
+
+There are two ways in which we can add multiple style sheets to our page:
+
+1. Our HTML page can link to a single style sheet and that stylesheet can use the `@import` rule to import other style sheets.
+   - If a stylesheet uses the `@import` rule, it should appear before the other rules.
+1. We can use a separate `<link>` element for each style sheet in our HTML.
+   - As with all style sheets, if two rules apply to the same element, then the rules that appear later in the document will take precedence over previous rules. So the order in which we link to the style sheets should be considered.
+
+[Back to Main](README.md)
