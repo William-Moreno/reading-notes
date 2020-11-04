@@ -83,7 +83,7 @@ We can include the CSS framework code in our projects rather than writing the CS
 
 One of the most popular uses of CSS frameworks is in creating grids to layout pages. There are several grid frameworks available, but one of the most popular is the [_960 Grid System_](www.960.gs). It provides a style sheet we can include in our HTML pages by linking to it. Then, all we have to do is provide the appropriate classes to our HTML code and it will create multiple column layout for us.
 
-- link to the 906_12_col.css stylesheet in the `<head>` of the page
+- link to the 960_12_col.css stylesheet in the `<head>` of the page
 - create a `<div>` to contain the entire page and give it a class of `"container_12"` to indicate that we will be using a 12 column grid
 - we also provide that `<div>` a class of `clearfix` to ensure that browsers know the height of the containing box, because it only contains floated elements
 
