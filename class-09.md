@@ -70,3 +70,71 @@ list box containing two or more `<option>` elements. the `<name>` attribute indi
 #### Multiple Select Box
 
 The `<select>` element can turn a drop down box into a mutli-selection tool using the `<size>` and `<multiple>` attributes
+
+#### File Input Box
+
+Here we use `<input>` with a `type="file"`. It will display a text input bar with a browse button at the far end. The `method` attibute of the `<form>` element must be set to a value of `post` in order to allow the user to upload files
+
+#### Submit Button
+
+Use a `type="submit"` with `<input>` to create a submit button. Optionally, it can have a `name` or `value` *(which controls the text on the button)* attribute associated with it
+
+#### Image Button
+
+If we want to use an image when creating the submit button, `type="image"` is the only difference between the two
+
+### HTML5 Form Validation
+
+Traditionally, form validation has been performed using JavaScript. But HTML 5 is introducing validation which is now performed by the browser instead.
+
+- Reduces the amount of work the server has to do
+- Enables users to see if there are problems with the form faster than if validation were performed on the server
+
+HTML5 add more `types` for the `<input>` element including:
+- `"date"`
+- `"email"`
+- `"url"`
+- `"search"`
+
+It also allows us to use `placeholder` to display default text in the box until the user clicks it.
+
+## CSS Lists, Tables & Forms
+
+In addition to the CSS properties covered in other chapters which work with the contents of all elements, there are several others that are specifically used to control the appearance of lists, tables and forms.
+
+### List Properties
+
+- `list-style-type` allows us to control the shape or style of the bullet point or numeber of list items
+- `list-style-image` allows us to specify an image that we supply a url path to, to use in place of a bullet point
+- `list-style-position` allows us to designate whether we want the marker inside or outside the container holding the list items
+
+There is also a `list-style` shorthand to apply any combination of these properties in a single line.
+
+### Table Properties
+
+Many of the properties we already use are utilized to style a table:
+
+- `width` to set the width of the table
+- `padding` to set the space between the border of each table cell and its content
+- `text-transform` to convert the content of the table headers to uppercase
+- `letter-spacing`, `font-size to add additional styling to the content of the table headers
+- `border-top`, `border-bottom` to set borders above and below the table headers
+- `text-align` to align the writing to the left or right of table cells
+- `background-color` to change the background color of alternating rows of the table
+- `:hover` to highlight a table row when a user mouses over it
+
+In addition to those these properties are also useful:
+
+- `empty-cells` lets us determine if a cell with no value will disply its borders
+- `border-spacing` and `border-collapse` manage the gaps, or lack thereof, between cells.
+
+### Styling Forms
+
+When it comes to forms, there do not appear to be any tailor made properties for styling them. Rather, we must make use of many other CSS properties by applying them to the form element in intelligent manners, similar to the list shown for tables, above.
+
+When styling forms, we should strive to align controls vertically using CSS, because this makes them easier to use.
+
+## JavaScript Events
+
+
+
