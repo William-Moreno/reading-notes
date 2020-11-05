@@ -77,7 +77,7 @@ Here we use `<input>` with a `type="file"`. It will display a text input bar wit
 
 #### Submit Button
 
-Use a `type="submit"` with `<input>` to create a submit button. Optionally, it can have a `name` or `value` *(which controls the text on the button)* attribute associated with it
+Use a `type="submit"` with `<input>` to create a submit button. Optionally, it can have a `name` or `value` _(which controls the text on the button)_ attribute associated with it
 
 #### Image Button
 
@@ -91,6 +91,7 @@ Traditionally, form validation has been performed using JavaScript. But HTML 5 i
 - Enables users to see if there are problems with the form faster than if validation were performed on the server
 
 HTML5 add more `types` for the `<input>` element including:
+
 - `"date"`
 - `"email"`
 - `"url"`
@@ -136,7 +137,8 @@ When styling forms, we should strive to align controls vertically using CSS, bec
 
 ## JavaScript Events
 
-Events are the browser's way of indicating when something has happened *(a page is loaded, a button has been clicked).* There are a lot of events that occur while we are browsing the web. Any of them can be used as a trigger to activate a function in our JavaScript code. A few examples are:
+Events are the browser's way of indicating when something has happened _(a page is loaded, a button has been clicked)._ There are a lot of events that occur while we are browsing the web. Any of them can be used as a trigger to activate a function in our JavaScript code. A few examples are:
+
 - UI Events
   - `load`
   - `error`
@@ -170,6 +172,7 @@ Event handlers let us indicate which event we are waiting for on any particular 
 - Traditional DOM event handlers
   - **Event handlers** were introduced in the original specification for the DOM and are considered better than HTML event handlers because they let us separate the JavaScript from the HTML
 - DOM level 2 event handlers
+
   - **Event listeners** were introduced in an update to the DOM specification and are now considered the favored way of handling events
 
   #### Traditional DOM Event Handlers
@@ -189,7 +192,17 @@ Event handlers let us indicate which event we are waiting for on any particular 
   ```
 
   Because we cannot have parenthesis after the function names in event handlers or listeners, passing arguments requires a workaround. This can be done by wrapping the function call inside an **anonymous function**.
-  
 
+### Event Flow and Why Flow Matters
 
+HTML elements nest inside other elements. If you hover or click on a link, you will also be hovering or clicking on its parent elements. The flow of events only really matters when our code has event handlers on an element _and_ one of its ancestor or descendant elements.
 
+#### The Event Object
+
+When an event occurs, the event object tells us information about the event, and the element it happened upon.
+
+#### Event Delegation
+
+Creating event listeners for a lot of elements can slow down a page, but event flow allows us to listen for an event on a parent element. Thus, we can use event delegation to monitor for events that happen on all of the children of an element.
+
+[Back to Main](README.md)
