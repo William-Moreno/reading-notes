@@ -24,3 +24,34 @@ There are several types of form controls that you can use to collect information
 - Uploading Files
   - **File Upload** - Allows users to upload files to a website
 
+### How Forms Work
+
+A User fills in a form and then presses a button to submit the information to the server. The name of each form control is sent to the server along with the value the user entered. The server processes the information using a programming language. THe server creates a new page to send back to the browser based on the information received.
+
+A form may have several form controls. The server needs to know which piece of inputted data corresponds with which form element. For example:
+
+```HTML
+username=Ivy
+```
+
+### Form Structure
+
+We create forms in HTML with the `<form>` element. This tag always carries an `action` attribute (which is the url of the page that will receive the information from the form) and a `method`, which will be either `"get"` or `"post"`. by default this value is "get".
+
+#### Text Input
+
+We create this with the `<input>` element with the attributes - `type="text"`, `name`, and `maxlength `
+
+#### Password Input
+
+This is similar to above, however, our `<input>` can have `type="password"` instead
+
+#### Text Area
+
+Created with `<textarea>`
+
+#### Radio Button
+
+`<input>` with `type="radio"` can have `name`, `value` and `checked` attributes *("checked" can cause a choice to be already selected when the page loads)*
+
+#### Checkbox
