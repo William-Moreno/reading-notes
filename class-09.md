@@ -136,5 +136,32 @@ When styling forms, we should strive to align controls vertically using CSS, bec
 
 ## JavaScript Events
 
+Events are the browser's way of indicating when something has happened *(a page is loaded, a button has been clicked).* There are a lot of events that occur while we are browsing the web. Any of them can be used as a trigger to activate a function in our JavaScript code. A few examples are:
+- UI Events
+  - `load`
+  - `error`
+  - `scroll`
+- Keyboard Events
+  - `keypress`
+  - `keydown`
+- Mouse Events
+  - `click`
+  - `mouseover`
+- Focus Events
+  - `blur`
+- Form Events
+  - `input`
+  - `submit`
+  - `copy`
+- Mutation Events
+  - `DOMNodeInserted`
+  - `DOMNodeRemovedFromDocument`
+
+When the user interacts with the HTML on a web page, three steps are involved in getting JavaScript code to trigger. Collectively, these steps are known as **event handling**
+
+1. Select the **element** node(s) we want the script to respond to.
+1. Indicate which **event** on the selected node(s) will trigger the response.
+1. State the **code** we want to execute when the event occurs.
+
 
 
