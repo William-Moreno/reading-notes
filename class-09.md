@@ -163,5 +163,33 @@ When the user interacts with the HTML on a web page, three steps are involved in
 1. Indicate which **event** on the selected node(s) will trigger the response.
 1. State the **code** we want to execute when the event occurs.
 
+Event handlers let us indicate which event we are waiting for on any particular element. There are three types of event handlers:
+
+- HTML event handlers
+  - This is **bad** practice, but it still exists in older code
+- Traditional DOM event handlers
+  - **Event handlers** were introduced in the original specification for the DOM and are considered better than HTML event handlers because they let us separate the JavaScript from the HTML
+- DOM level 2 event handlers
+  - **Event listeners** were introduced in an update to the DOM specification and are now considered the favored way of handling events
+
+  #### Traditional DOM Event Handlers
+
+  All modern browsers understand this way of creating an event handler, but we can only attach one function to each event handler.
+
+  ```JavaScript
+  element.onevent = functionName;
+  ```
+
+  #### Event Listeners
+
+  Event listeners are a more recent approach to handling events. They can deal with more than one function at a time but they are not supported in older browsers.
+
+  ```JavaScript
+  element.addEventListener('event', functionName [, Boolean]);
+  ```
+
+  Because we cannot have parenthesis after the function names in event handlers or listeners, passing arguments requires a workaround. This can be done by wrapping the function call inside an **anonymous function**.
+  
+
 
 
