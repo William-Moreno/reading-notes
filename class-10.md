@@ -145,4 +145,25 @@ There are seven types of built-in error objects in JavaScript:
    - Incorrect use of URI functions
      - Characters are not escaped.
 
+Now that we know what an error is and how the browser treats them, there are two things we can do with the errors.
+
+1. Debug the script to fix errors
+   -If we come across an error while writing a script, we will need to debug the code, track down the source of the error, and fix it.
+1. Handle the errors gracefully
+   - We can handle errors gracefully using `try`, `catch`, `throw`, and `finally` statements.
+
+Debugging is about deduction: eliminating potential causes of an error. Try to narrow down where the problem might be, then look for clues.
+
+Where is the problem?
+
+1. Look at the error message to see the type of error and which line number it happened in
+1. Check how far the script is running
+1. Use breakpoints where things are going wrong
+
+What exactly is the problem?
+
+1. When we have set breakpoints, we can see if the variables around them have the values we would expect them to. If not, we look earlier in the script
+1. Break down / break out parts of the code to test smaller pieces of the functionality
+1. Check the number of parameters for a function, or the number of items in an array.
+
 [Back to Main](README.md)
