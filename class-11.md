@@ -138,4 +138,56 @@ FTP programs allow us to transfer files from our local computer to our web serve
 
 ## Video & Audio APIs
 
+HTML5 comes with elements for embedding rich media in documents — `<video>` and `<audio>` — which in turn come with their own APIs for controlling playback, seeking, etc.
+
+These elements allow us to embed video and audio into web pages.
+
+```HTML
+<video controls>
+  <source src="rabbit320.mp4" type="video/mp4">
+  <source src="rabbit320.webm" type="video/webm">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+</video>
+```
+
+If we don't specify the `controls` attribute on the `<video>` tag, there will be no playback controls. However, another way we can handle controls and differences in browser that use them is by hiding the native controls (by removing the controls attribute), and programming your own with HTML, CSS, and JavaScript.
+
+Part of the HTML5 spec, the `HTMLMediaElement` API provides features to allow us to control video and audio players programmatically — for example `HTMLMediaElement.play()`, `HTMLMediaElement.pause()`, etc. This interface is available to both `<audio>` and `<video>` elements.
+
+A `<div class="controls">` container holds buttons for control. We can include multiple `<source>` elements to support varying browsers, and add buttons for controls. The `<button>`s have `class` names, `data-icon` attributess to define which icon should be shown on them and an `aria-label` to provide an understandable description of each.
+
+The CSS for the controls might look something like this:
+
+```CSS
+.controls {
+  visibility: hidden;
+  opacity: 0.5;
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -200px;
+  background-color: black;
+  box-shadow: 3px 3px 5px black;
+  transition: 1s all;
+  display: flex;
+}
+
+.player:hover .controls, player:focus .controls {
+  opacity: 1;
+}
+```
+
+Utilizing JavaScript we can then implement the actual functionality of the controls of the player:
+
+- the play/pause button
+- the stop button
+- rewinding and fast foarwarding
+- the elapsed time
+
+#### Summary
+
+API makes a wealth of functionality available for creating simple video and audio players, and that's only the tip of the iceberg.
+
 [Back to Main](README.md)
