@@ -1,10 +1,11 @@
-# Reading Notes for Code Fellows
+# Reading Notes
 
 This is a repository of reading notes I have compiled while attending the following courses:
 
 - _Code 102: Introduction to Software Development_
 - _Code 201: Foundations of Software Development_
 - _Code 301: Intermediate Software Development_
+- _Code 401: Advanced Software Development_
 
 ---
 
@@ -57,6 +58,23 @@ Reading notes from Code 201: _Foundations of Software Development_.
 ## Code 301 Intermediate Software Development
 
 Reading notes from Code 301: _Intermediate Software Development_.
+
+- [SMACSS and Responsive Web Design](Code_301/class-01.md)
+- [jQuery, Events, and the DOM](Code_301/class-02.md)
+- [Flexbox and Templating](Code_301/class-03.md)
+- [Responsive Web Design and Regular Expressions](Code_301/class-04.md)
+- [Heroku Deployment](Code_301/class-05.md)
+- [Node, Express, and APIs](Code_301/class-06.md)
+- [APIs Continued](Code_301/class-07.md)
+- [SQL](Code_301/class-08.md)
+- [Refactoring](Code_301/class-09.md)
+- [The Call Stack and Debugging](Code_301/class-10.md)
+- [EJS](Code_301/class-11.md)
+- [Components](Code_301/class-12.md)
+- [Update/Delete](Code_301/class-13.md)
+- [DB Normalization](Code_301/class-14a.md)
+- [Project Ideas & APIs](Code_301/class-14b.md)
+- [Diversity and Inclusion](Code_301/class-15.md)
 
 ## Code 401 Advanced Software Development
 
