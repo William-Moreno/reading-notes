@@ -50,17 +50,20 @@ _The . in the statement is known as the_ **member operator**.
 ### Comments
 
 Comments should be used in certain areas to explain what our code does. There are two ways to denote comments when coding JavaScript: **single line** and **multi line**.
+
 - Single line comments are added to the end of a line and take the form of:
+
 ```JavaScript
 // comment goes here
 ```
+
 - Multi line comments tend to span 2 or more complete lines and are defined like this:
+
 ```JavaScript
 /* first comment line
 second comment line
 third comment line. */
 ```
-
 
 ## Variables
 
@@ -92,4 +95,4 @@ When naming or dealing with variables it is important to remember that JavaScrip
 randomNumber !== randomnumber !== RandomNumber !== RANDOMNUMBER !== RaNdOmNuMbEr
 ```
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

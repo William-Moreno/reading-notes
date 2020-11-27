@@ -41,4 +41,4 @@ Circuits come in many different types. Each one manipulates the binary data in d
 
 Circuits are used in every operation a computer performs. As circuits become smaller the computers become faster because the electrical impulses of circuits will travel shorter distances.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

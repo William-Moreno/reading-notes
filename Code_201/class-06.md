@@ -313,4 +313,4 @@ Sample methods than can be used to manipulate these values:
 | `className`         | gets or sets the value of the `class` attribute      |
 | `id`                | gets or sets the value of the `id` attribute         |
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

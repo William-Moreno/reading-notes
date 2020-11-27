@@ -23,4 +23,4 @@ The researchers concluded that what distinguished the "good" teams from the dysf
 
 The technology industry is one of the fastest growing parts of our economy. It is also becoming the world's dominant commericial culture. Working in groups and teams is fast becoming the rule. In the best teams, members listen to one another and show sensitivity to feelings and needs.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

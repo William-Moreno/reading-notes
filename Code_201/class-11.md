@@ -190,4 +190,4 @@ Utilizing JavaScript we can then implement the actual functionality of the contr
 
 API makes a wealth of functionality available for creating simple video and audio players, and that's only the tip of the iceberg.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

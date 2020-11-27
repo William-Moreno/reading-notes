@@ -166,4 +166,4 @@ In order to work with dates, we create an instance of the `Date` object. We can 
 var today = new Date();
 ```
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

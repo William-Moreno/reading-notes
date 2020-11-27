@@ -75,4 +75,4 @@ After cloning a project, all files in a checked out (or working) copy of a proje
 - **Tracked** - Files can be modified, unmodified, or staged. They were part of the most recent file snapshot.
 - **Untracked** - Files were not in the last snapshot and do not currently reside in the staging area.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

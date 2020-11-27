@@ -49,4 +49,4 @@ for (var i = 0; i < 10; i++) {
 - `i < 10` - _condition_ the loop should continue to run until it reaches the specified number.
 - `i++` - _update_ every time the loop completes the block of code it increments the counter.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

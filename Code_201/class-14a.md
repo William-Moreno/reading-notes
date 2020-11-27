@@ -125,4 +125,4 @@ Similiar to transitions, animations have properties for duration, timing-functio
 
 In addition, the `animation-direction` property can declare whether an animation occurs in the `normal`, `reverse`, `alternate`, or `alternate-reverse` direction.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

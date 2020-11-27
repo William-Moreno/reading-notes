@@ -98,4 +98,4 @@ There are two ways in which we can add multiple style sheets to our page:
 1. We can use a separate `<link>` element for each style sheet in our HTML.
    - As with all style sheets, if two rules apply to the same element, then the rules that appear later in the document will take precedence over previous rules. So the order in which we link to the style sheets should be considered.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

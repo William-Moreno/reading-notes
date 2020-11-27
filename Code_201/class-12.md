@@ -266,4 +266,4 @@ We use four properties to use shadows:
 - `shadowBlur = float` - Indicates the size of the blurring effect; this value doesn't correspond to a number of pixels and is not affected by the current transformation matrix. The default value is 0.
 - `shadowColor = color` - A standard CSS color value indicating the color of the shadow effect; by default, it is fully-transparent black.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

@@ -83,4 +83,4 @@ It is important to select text and background colors that provide enough contras
 
 Using color indicators like `rgba` or `hsla`, allows you to specify the opacity of a color. The "a" position is a value between 0.0 and 1.0 that represents a percentage of transparency. Some browsers may not support opacity so it is good practice to create an alternate backup CSS rule above the rule that those browsers can use.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

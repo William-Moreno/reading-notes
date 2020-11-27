@@ -205,4 +205,4 @@ When an event occurs, the event object tells us information about the event, and
 
 Creating event listeners for a lot of elements can slow down a page, but event flow allows us to listen for an event on a parent element. Thus, we can use event delegation to monitor for events that happen on all of the children of an element.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

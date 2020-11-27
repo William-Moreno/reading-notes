@@ -170,4 +170,4 @@ Using JavaScript we can implement things such as slideshows, forms, filtering da
 - The `<script>` tag in an HTML page tells the browser to load the JavaScript file. _(this is similar to the relationship between the `<link>` tag and a CSS file.)_
 - While the JavaScript code we write may alter the original web page, it does not change any of the code in the HTML file.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

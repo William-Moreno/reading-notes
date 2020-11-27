@@ -135,4 +135,4 @@ Variables created outside of functions can be used anywhere in the script. They 
 1. **Job Interview Readiness** - A common step in many interviews involves pair programming between a current employee and an applicant. This allows companies to see how the prospective employee would fit into their team. Pair programming strengthens these skills.
 1. **Work Environment Readiness** - Many companies that utilize pair programming expect to have to train new employees on how they operate. Code Fellows graduates who are already familiar with how pairing works can hit the ground running at a new job.
 
-[Back to Main](README.md)
+[Back to Main](../README.md)

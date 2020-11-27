@@ -168,4 +168,4 @@ Technically these are not properties. They are more like selector extensions. Th
 | **Substring** | [*=] _Matches a spcific attribute whose value contains a specific substring_               | `p[attr*="do"]`   |
 | **Suffix**    | [$=] _Matches a specific attribute whose value ends with a specific string_                | `p[attr$="g"]`    |
 
-[Back to Main](README.md)
+[Back to Main](../README.md)
