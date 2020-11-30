@@ -119,4 +119,25 @@ A quick way to make media scalable is by using the **\_\_** property with a valu
 
 The `max-width` property doesn’t work well for all instances of media, specifically around **\_\_\_\_** and embedded media. _(see [Responsive Web Design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/) for a work around)_.
 
+## Floats
+
+**Float** is a CSS positioning **\_\_\_\_**.
+
+Floated elements _remain a part of the flow of the web page_. Which is distinctly different from page elements that us **\_\_\_\_** positioning.
+
+There are four valid values for the float property:
+
+- **Left** floats elements left
+- **Right** floats elements right
+- **None** _default_ ensures the element will not float
+- **\_\_\_\_** element will assume the float value from its parent element
+
+Floats can be used to create entire web layouts, but stronger tools are **\_\_\_\_** and \_\_\_\_.
+
+**\_\_\_** are still useful because they still have abilities unique to them.
+
+Float's sister property is **\_\_\_\_**.
+
+An element that has the `clear` property on it will not move up adjacent to the **\_\_\_** element, but will move itself down below it.
+
 [Back to Main](../README.md)
