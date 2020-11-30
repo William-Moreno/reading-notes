@@ -67,6 +67,56 @@ One of the most common media features revolves around determining a **\_\_** or 
 
 In responsive design, `min-width` and `max-width` are the most commonly used features. They help build **\_\_\_\_** websites on desktops and **\_\_** **\_\_** equally.
 
-#### Orientation
+#### Orientation & Aspect Ratio
+
+The `orientation` media feature determines if a device is in the \_\_\_\_ mode _(the display is wider than taller)_ or the \_\_\_\_ mode _(where the display is taller than wider)_. This media feature plays a large part with mobile devices.
+
+The \_\_\_\_-\_\_\_\_ feature consists of two positive integers separated by a forward slash. The first identifies the \_\_\_\_ in pixels and the second identifies the **\_\_\_\_** in pixels.
+
+```CSS
+@media all and (min-device-aspect-ratio: 16/9) {...}
+```
+
+#### Other Media Features
+
+Other media features include:
+
+- `pixel-ratio` media features
+- `resolution` media features
+- `color`
+- `monochrome`
+- `color-index`
+- `grid`
+- `scan`
+
+Writing media query breakpoints around common viewport sizes such as 320px, 480px, 768px, 1024px and so forth is a \_\_\_\_ idea. New devices and resolutions are being introduced all the time.
+
+#### Mobile First
+
+The **\_\_** \_\_\_\_ approach includes using styles targeted at smaller viewports as the default styles for a website, then use media queries to add style as the viewport grows. This saves bandwidth.
+
+Downloading unnecessary media assets like shadows, gradients, transforms and animations in mobile styles can **\_** loading and \_\_\_\_ battery life. Media queries can be used to stop these.
+
+#### Viewport
+
+Using the `viewport` meta tag with either the height or width values will define the height or width of the viewport. For best results, it is recommended that we use the `device-height` and `device-width` values to inherit the device's **\_\_** and **\_\_**.
+
+```HTML
+<meta name="viewport" content="width=device-width">
+```
+
+The **\_\_**`-scale` and **\_\_**`-scale` values determine how small and how large a viewport may be scaled.
+
+Turning off the ability to scale a website is a \_\_\_\_ idea.
+
+The `viewport` meta tag will accept **\_\_\_\_** values as well as **\_\_\_\_** values, allowing several properties to be set at once.
+
+### Flexible Media
+
+Images, videos and other media types need to be **\_\_\_\_**, changing their size as the size of the viewport changes.
+
+A quick way to make media scalable is by using the **\_\_** property with a value of 100%, ensuring that as the viewport gets smaller, any media will scale down according to its container's width.
+
+The `max-width` property doesn’t work well for all instances of media, specifically around **\_\_\_\_** and embedded media. _(see [Responsive Web Design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/) for a work around)_.
 
 [Back to Main](../README.md)
