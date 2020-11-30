@@ -175,4 +175,19 @@ Collapsing almost always needs to be dealt withto prevent strange layout problem
 
 **\_\_\_\_** scenarios call for **\_\_\_\_** float clearing methods.
 
+### Problems with Floats
+
+- **Pushdown** is a symptom of an element inside a floated item being wider than the float itself.
+  - _Quick fix:_ use `overflow: hidden;` to cut off excess
+- *Double Margin Bug\*\* if margin is applied in the same direction as the float it will *double the margin\*.
+  - _Quick fix:_ set `display: inline;` on the float
+- **the 3px Jog** is when text that is up next to a floated element is mysteriously kicked away by 3px.
+  - _Quick fix:_ set a width or height on the affect text
+- **Bottom Margin Bug** (IE7) is when if a floated parent has floated children inside, bottom margin on those children is ignored by the parent.
+  - _Quick fix:_ using bottom padding on the parent instead
+
+### Alternatives
+
+If you need text wrapping around images, there really aren't any alternatives for **\_\_\_\_**.
+
 [Back to Main](../README.md)
