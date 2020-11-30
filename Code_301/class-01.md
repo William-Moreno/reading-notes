@@ -140,4 +140,39 @@ Float's sister property is **\_\_\_\_**.
 
 An element that has the `clear` property on it will not move up adjacent to the **\_\_\_** element, but will move itself down below it.
 
+`clear` has four valid values:
+
+- **\_\_** is most commonly used and clears floats coming from either direction
+- **Left** clears floats to the left
+- **Right** clears floats to the right
+- **None** which is the default
+
+If a parent element contains nothing but floated elements, the **\_\_\_\_** of it would literally collapse to nothing.
+
+Collapsing almost always needs to be dealt withto prevent strange layout problems. We fix it by clearing the float **\_\_\_\_** the floated elements in the container but **\_\_\_\_** the close of the container.
+
+### Techniques for Clearing Floats
+
+**The Empty Div Method** is quite literally an empty div
+
+```HTML
+<div style="clear: both;"></div>
+```
+
+**The Overflow Method** relies on setting the overflow CSS property on a parent element causing the parent to expand to contain the floats if set to **\_\_** or **\_\_**.
+
+**The Easy Clearing Method** uses a clever CSS pseudo selector (`:after`) to clear floats. Instead of setting overflow on the parent, we apply an additional class like "clearfix" to it and then apply CSS:
+
+```CSS
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+```
+
+**\_\_\_\_** scenarios call for **\_\_\_\_** float clearing methods.
+
 [Back to Main](../README.md)
