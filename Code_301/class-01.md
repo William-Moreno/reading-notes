@@ -39,6 +39,34 @@ Each media query may include a media type followed by one or more expressions. W
 
 #### Logical Operators in Media Queries
 
-There are three different **\_\_** operators available for use within media queries: `and`, `not` and `only`.
+There are three different **\_\_** operators available for use within media queries: `and`, `not` and `only`. Using these we can build powerful expressions.
+
+Using the `and` operator allows an extra condition to be added...
+
+```CSS
+@media all and (min-width: 800px) and  (max-width: 1024px) {...}
+```
+
+The `not` operator negates the query, specifying any query but the one identified.
+
+```CSS
+@media not screen and (color) {...}
+```
+
+The `only` operator is a new operator that isn't recognized by HTML4. Styles including this operator are hidden from devices/browsers that do not support media queries
+
+```CSS
+@media only screen and (orientation: portrait) {...}
+```
+
+#### Media Features in Media Queries
+
+Media **\_\_\_\_** identify what attributes or properties will be targeted within the media query expression.
+
+One of the most common media features revolves around determining a **\_\_** or **\_\_** for a device or browser viewport. Their values may be any length unit, relative or absolute.
+
+In responsive design, `min-width` and `max-width` are the most commonly used features. They help build **\_\_\_\_** websites on desktops and **\_\_** **\_\_** equally.
+
+#### Orientation
 
 [Back to Main](../README.md)
