@@ -32,7 +32,21 @@ Everything jQuery does can be accomplished with standard JavaScript. It is mostl
 1. Common Tasks in Less Code
 1. Cross-Browser Comompatibility
 
+### Matched Sets/jQuery Selections
 
+When we select one or more elements, a jQuery object is returned, known as a *matched set* or *jquery selection*.
+
+- **Single Element**
+  - If a selector returns one element , the jQuery object contains a reference to just one element node. *(each element selected is given an index number. In the case of a single node the index is 0)*.
+- **Multiple Elements**
+  - if a selector returns several elements, the jQuery object contains references to each element.
+
+  Some jQuery methods both retrieve information from, and update the contents of elements.
+
+- **Get Information**
+  - If a jQuery selection holds more than one element, and a method is used to get information from the selected elements, it will retrieve data from only the first element in the matched set.
+- **Set Information**
+  - if a jQuery selection holds more than one element, and a method is used to update information on the page, it will update ALL of the elements in the matched set, not just the the first one.
 
 
 ## 6 Reasons for Pair Programming
