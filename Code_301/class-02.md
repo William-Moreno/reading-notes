@@ -125,11 +125,44 @@ jQuery's `.ready()` method checks if the browser supports the `DOMContentLoaded`
 
 Using this can make our pages appear as if they are loading faster because it does not wait for other assets to finish loading.
 
-\*\*Placing Scripts Before the Closing `</body>` Tag
+**Placing Scripts Before the Closing `</body>` Tag**
 
 When we place our script at the end of the page, the HTML will have loaded into the DOM before the script runs.
 
 People still use the `.ready()` method so that scripts will still work if someone moves the script tag somewhere else in the HTML page.
+
+### Getting Element Content
+
+The `.html()` and `.text()` methods both retrieve and update the content of elements.
+
+- `.html()` retrieves only the HTML inside the _first_ element in the matched set, along with any of its descendants
+- `.text()` returns the content from every element in the jQuery selection, along with the text from any descendants
+
+### Updating Elements
+
+Four methods that update the content of all elements in a jQuery selection:
+
+- `.html()` This method gives every element in the matched set the same new content. The new content may include HTML.
+
+- `.text()` This method gives every element in the matched set the same new text content. _Any markup would be shown as text._
+
+- `.replaceWith()` This method replaces every element in a matched set with new content. It also returns the replaced elements.
+
+- `remove()` This method removes all of the elements in the matched set.
+
+**Using a Function to Update Content**
+
+The following function takes the text from each selected element and places it inside `<em>` tags:
+
+```JavaScript
+$('li.hot').html(function() {
+  return '<em>' + $(this).text() + '</em>';
+});
+```
+
+1. `return` indicates that the content should be returned by the function
+1. `<em>` tags are placed around the text content of the list item.
+1. `this` refers to the current list item. `$(this)` places that element in a new jQuery object so that we can use jQuery methods on it.
 
 ## 6 Reasons for Pair Programming
 
