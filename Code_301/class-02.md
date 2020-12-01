@@ -24,6 +24,15 @@ A `jQuery` object is created by the `jQuery()` function. The object and the elem
 $('li .hot').addClass('complete');
 ```
 
+### Why Use jQuery?
+
+Everything jQuery does can be accomplished with standard JavaScript. It is mostly used because it makes coding simpler. *"Write less, do more"*
+
+1. Simple Selectors
+1. Common Tasks in Less Code
+1. Cross-Browser Comompatibility
+
+
 
 
 ## 6 Reasons for Pair Programming
