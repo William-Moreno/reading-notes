@@ -164,6 +164,41 @@ $('li.hot').html(function() {
 1. `<em>` tags are placed around the text content of the list item.
 1. `this` refers to the current list item. `$(this)` places that element in a new jQuery object so that we can use jQuery methods on it.
 
+### Inserting Elements
+
+Inserting elements involves two steps:
+
+1. Create the new elements in a jQuery object
+1. Use a method to insert the content into the page
+
+**Creating New Elements in a jQuery Object**
+
+The following statement creates a variable that stores a jQuery object in it:
+
+```JavaScript
+var $newItem = $('<li class="new">item</li>');
+```
+
+**Adding the New Elements to the Page**
+
+Once we have a variable containing new content, we can use any of the following methods to add the content to the DOM tree:
+
+- `.before()` inserts the content before the selected element(s)
+- `.after()` inserts the content after the selected element(s)
+- `.prepend()` inserts content inside the selected element(s), after the opening tag
+- `.append()` inserts content inside the selected element(s), before the closing tag
+
+_(there are also `.prependTo()` and `.appendTo()` methods)_
+
+### Getting and Setting Attribute Values
+
+We can create attributes, or access and update their contents, using the following four methods:
+
+- `.attr()` can get or set a specified attribute and its value
+- `.removeAttr()` removes a specified attribute (and its value)
+- `.addClass()` adds a new value to the existing value of the class attribute without overwriting existing values
+- `.removeClass()` removes a value from the class attribute, leaving any other class names intact
+
 ## 6 Reasons for Pair Programming
 
 1. **Greater Efficiency** - Though pair programming takes slightly longer, it is proven to produce higher-quality code that requires less troubleshooting later. Therefore, it is more efficient that two people working on separate features. solutions can be reached faster through the sharing of ideas and discussion.
