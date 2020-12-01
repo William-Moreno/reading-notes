@@ -88,6 +88,49 @@ $('li[id!="one"]')
 
 Chaining works on _most_ methods used to **update** the jQuery selection. It _does not_ work on methods that **retrieve** information from the DOM.
 
+### Checking A Page Is Ready
+
+jQuery's `.ready()` method checks that the page is ready for our code to work with:
+
+```JavaScript
+$(document).ready(function() {
+  // Script goes here
+});
+```
+
+- `$(document)` creates a jQuery object representing the page
+- `.ready()` when the page is ready, the function inside the parentheses is run
+
+the more commonly used shorthand for this is:
+
+```JavaScript
+$(function(){
+  // Script goes here
+});
+```
+
+A positive side-effect of writing jQuery code inside this method is that it creates function-level scope for its variables preventing naming collisions with other scripts that might use the same variable names.
+
+### The `load` Event vs. The `.ready()` Method vs. Placing Scripts Before the Closing `</body>` Tag
+
+**The `load` Event**
+
+jQuery's `.load()` method has been replaced by the `.on()` method. It fires after the page and all of its resources have loaded.
+
+We should use this when our script relies on assets to have loaded (i.e. images, etc) to be functional.
+
+**The `.ready()` Method**
+
+jQuery's `.ready()` method checks if the browser supports the `DOMContentLoaded` event and, if it does, creates an event listener that responds to that event, firing as soon as the DOM has loaded.
+
+Using this can make our pages appear as if they are loading faster because it does not wait for other assets to finish loading.
+
+\*\*Placing Scripts Before the Closing `</body>` Tag
+
+When we place our script at the end of the page, the HTML will have loaded into the DOM before the script runs.
+
+People still use the `.ready()` method so that scripts will still work if someone moves the script tag somewhere else in the HTML page.
+
 ## 6 Reasons for Pair Programming
 
 1. **Greater Efficiency** - Though pair programming takes slightly longer, it is proven to produce higher-quality code that requires less troubleshooting later. Therefore, it is more efficient that two people working on separate features. solutions can be reached faster through the sharing of ideas and discussion.
