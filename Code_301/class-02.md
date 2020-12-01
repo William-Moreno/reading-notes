@@ -1,5 +1,7 @@
 # jQuery, Events, and The DOM
+
 ---
+
 ## jQuery
 
 jQuery is a JavaScript file that we include in our web pages that lets us find elements using CSS-style selectors and then do something with those elements using jQuery methods.
@@ -26,7 +28,7 @@ $('li .hot').addClass('complete');
 
 ### Why Use jQuery?
 
-Everything jQuery does can be accomplished with standard JavaScript. It is mostly used because it makes coding simpler. *"Write less, do more"*
+Everything jQuery does can be accomplished with standard JavaScript. It is mostly used because it makes coding simpler. _"Write less, do more"_
 
 1. Simple Selectors
 1. Common Tasks in Less Code
@@ -34,11 +36,12 @@ Everything jQuery does can be accomplished with standard JavaScript. It is mostl
 
 ### Matched Sets/jQuery Selections
 
-When we select one or more elements, a jQuery object is returned, known as a *matched set* or *jquery selection*.
+When we select one or more elements, a jQuery object is returned, known as a _matched set_ or _jquery selection_.
 
 - **Single Element**
-  - If a selector returns one element , the jQuery object contains a reference to just one element node. *(each element selected is given an index number. In the case of a single node the index is 0)*.
+  - If a selector returns one element , the jQuery object contains a reference to just one element node. _(each element selected is given an index number. In the case of a single node the index is 0)_.
 - **Multiple Elements**
+
   - if a selector returns several elements, the jQuery object contains references to each element.
 
   Some jQuery methods both retrieve information from, and update the contents of elements.
@@ -46,8 +49,44 @@ When we select one or more elements, a jQuery object is returned, known as a *ma
 - **Get Information**
   - If a jQuery selection holds more than one element, and a method is used to get information from the selected elements, it will retrieve data from only the first element in the matched set.
 - **Set Information**
-  - if a jQuery selection holds more than one element, and a method is used to update information on the page, it will update ALL of the elements in the matched set, not just the the first one.
+  - If a jQuery selection holds more than one element, and a method is used to update information on the page, it will update ALL of the elements in the matched set, not just the the first one.
 
+When we create a selection with jQuery, it stores a reference to the corresponding nodes in the DOM tree. It does not copy them.
+
+The jQuery object is an array-like object because it stores a list of the elements in the same order that they appear in the HTML document.
+
+Creating a jQuery object takes time, processing resources, and memory because the interpreter must:
+
+1. Find the matching nodes in the DOM tree
+1. Create the jQuery object
+1. Store references to the nodes in the jQuery object
+
+So, if the code needs to use the same selection more than once, it is better to use that same jQuery object again rather than repeating the process above. To do this we store a reference to the jQuery object in a variable. This is known as Caching.
+
+_When a variable contains a jQuery object, it is often given a name beginning with the **$** symbol (to help differentiate it from other variables)._
+
+### Looping and Chaining
+
+With jQuery, when a selector returns multiple elements, we can update all of them using one method, without needing a loop. This is known as **implicit iteration**.
+
+When we want to get information from a series of elements, we can use the `.each()` method, rather than writing a loop.
+
+The process of placing several methods in the same selector is reffered to as **chaining** and results in far more compact code:
+
+```JavaScript
+$('li[id!="one"]').hide().delay(500).fadeIn(1400);
+```
+
+However, to make the code easier to read, we can place each new method on a new line:
+
+```JavaScript
+$('li[id!="one"]')
+.hide()
+.delay(500)
+.fadeIn(1400);
+```
+
+Chaining works on _most_ methods used to **update** the jQuery selection. It _does not_ work on methods that **retrieve** information from the DOM.
 
 ## 6 Reasons for Pair Programming
 
