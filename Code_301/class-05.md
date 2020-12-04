@@ -2,11 +2,13 @@
 ---
 ## Getting started on Heroku with Node.js
 
+Heroku is a cloud **p**latform **a**s **a** **s**ervice *(PaaS)* that developers use to deploy, manage and scale modern apps.
+
 [Heroku Dev Center Getting-Started](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
 
 Above is a link to the Heroku Dev Center website with a step-by-step guide to getting started on Heroku with Node.js where a series of pages guides a user through a tutorial for deploying Node.js apps.
 
-The tutorial guides the user through the following steps:
+The tutorial guides the user through a step by step process. The first four steps look something like this:
 
 1. *Set up* 
    - This section explains how to make sure all of the required components are installed on the user's computer including:
@@ -25,6 +27,7 @@ The tutorial guides the user through the following steps:
      - the user ensures that an instance of the app is running and then visits the website
 1. *View logs*
    - The user then learns how to view information about their running app and how to view message logs.
+
 
 ## Node.js
 
