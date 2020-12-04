@@ -26,5 +26,13 @@ The tutorial guides the user through the following steps:
 1. *View logs*
    - The user then learns how to view information about their running app and how to view message logs.
 
+## Node.js
+
+Node.js is an open source cross-platform runtime environment. It is written in JavaScript and allows us to build **server-side** and networking applications on any platform.
+
+We can create a local server relatively easily. But we can use the **Heroku** cloud application platform to turn our server into world-wide server.
+
+See Lenny Witman's [Node.js For Beginners...](https://howtonode.org/deploy-blog-to-heroku) website for a step-by-step guide to deploying a blog to Heroku.
+
 
 [Back to Main](../README.md)
