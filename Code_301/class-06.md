@@ -24,6 +24,8 @@ A working knowledge of Node.js is requisite to developing apps in React and Angu
 
 One of the biggest reasons to use Node is that it allows the use of JavaScript on the server. As such, it is used by many high-profile companies in their stacks.
 
+### Node.js Execution Model
+
 Traditional servers are "muti-threaded" in basis. This tands to be less efficient than the Node alternative, and can cause the system to become sluggish or to go down. The answer to more traffic, or use, is typically to add more servers to the system.
 
 Node, on the other hand, is single-threaded and event-driven. Meaning that events trigger everything that happens in Node. Node uses the **libuv** library to implement **asynchronous** behavior. This means that Node systems are capable of handling large numbers of simultaneous connections. To scale up for more traffic, or use, the common method is to clone the Node app, using a built in module, using it to handle more connections and traffic.
@@ -43,10 +45,32 @@ According the the sitepoint web page "What Is Node and When Should I Use It?" by
 
 ### Basic Server Set-Up
 
+1. We must first `require` Node's native HTTP module.
+1. Next, we use the `.createServer` method associated with it to create a new 'web server object' and pass it an anonymous function. *This anonymous function will be called every time a new connection is made to the server.
+1. The anonymous function is called with two arguments, ***request*** and ***response***.
+   - *request* - a request from the user
+   - *response* - a response to the users request
+1. Last we must instruct the server to 'listen' for requests and designate which port is should listen on.
 
+### Kinds of Apps Node is Suited to
 
+Node is well-suited to building to apps that require some for of real-time interaction. examples of these might be:
 
+- chat sites
+- APIs that handle many I/O driven requests *(databases)*
+- site for data streaming
 
+We can use Node to build simpler apps including (create, read, update and delete) apps, but the way we structure and build the app will be largely up to us as Node by itself tends to be somewhat sparse or light on that aspect. Various frameworks exist that can be utilized in the construction of these apps such as the popular **Express**. However, for greater creative variety we will need to pull in additional modules.
+
+### Advantages of Node.js
+
+There are many advantages to using Node *(a number of these have already been touched upon above)*
+
+- Speed
+- Scalability
+- The advantage of using JavaScript on a web server (and in the browser) allowing developers to do everything in the same language
+- Node can read JSON, the most important data exchange format on the web. Node allows easy flow of this data between programming layers
+- Node development is potentially easier to transition to because because most developers have at least a basic knowledge of JavaScript
 
 
 [Back to Main](../README.md)
