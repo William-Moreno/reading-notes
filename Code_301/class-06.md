@@ -39,6 +39,9 @@ According the the sitepoint web page "What Is Node and When Should I Use It?" by
 - Blocking I/O calls should be avoided
 - CPU-intensive operations should be handled by 'woorker' threads
 - Errors should always be handled correctly or they might lead to a crash
+- A number of developers also don't like the callback-based style of coding inherent to JavaScript
+
+### Basic Server Set-Up
 
 
 
