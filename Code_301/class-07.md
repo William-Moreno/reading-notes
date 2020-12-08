@@ -21,6 +21,14 @@ The researchers concluded that what separateded the "good" teams from the "bad" 
 
 The technology industry is one of the fastest growing parts of our economy. It is also becoming the world's dominant commericial culture. Working in groups and teams is fast becoming the rule. In the best teams, members listen to one another and show sensitivity to feelings and needs.
 
+## REST
+
+**REST** stands for **RE**presentational **S**tate **T**ransfer. I wasn't entirely certain what I was distilling from the article *"How I explained REST to my brother"*. I pidked up a little bit about how machines 'talk' and using **nouns** and **verbs**. I grasped the concept, but not with high clarity.
+
+Because I was still curious, I went in search of a little more on REST on my own. I found a few things while I was searching. However, this video I found by **WebConcepts* and watched for 8-9 minutes was pretty cool. I was able to grasp things a bit more by watching it. Even though it's a touch outdated, it worked for me, but results may vary....
+
+[REST API concepts and examples](https://www.youtube.com/watch?v=7YcW25PHnAA)
+
 
 
 
