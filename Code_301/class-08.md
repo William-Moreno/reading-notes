@@ -107,7 +107,46 @@ When creating a table, we must designate datatypes for each of the columns. It i
 | --- | --- |
 | `PRIMARY KEY` | Values in column are unique and can only be used on a single row of the table. They can therefore be used to identify that row |
 | `AUTOINCREMENT` | Used in integer columns. It is auto-filled and incremented with each row of insertions |
+| `UNIQUE` | Values in this column must be unique |
+| `NOT NULL` | Value cannot be 'NULL' |
+| `CHECK(expression)` | Can use complex test to evaluate whether an entered value is valid *(positive numbers, starts with a letter, etc)* |
+| `FOREIGN KEY ` | A consistency check. Validates that each value in this column corresponds to another value in a column in a different table |
 
+
+### Changing and Removing Tables
+
+#### Altering Tables
+
+To change a table by adding, modifying or removing columns and constraints. When adding a column it is very similar to setting a column at table creation:
+
+```SQL
+ALTER TABLE table
+ADD column DataType OptionalTableConstraint DEFAULT defaul_value;
+```
+
+Though it is fully supported in all databases, we can remove columns using the folowing:
+
+```SQL
+ALTER TABLE table
+DROP column_to_be_deleted;
+```
+#### Renaming and Removing Tables
+
+A table can be renamed using the `ALTER` command as well:
+
+```SQL
+ALTER TABLE table
+RENAME TO new_table_name;
+```
+
+And, a table can be irrevocably, deleted. Tables fully dependent on deleted ones will also be deleted at the same time.
+
+```SQL
+DROP TABLE IF EXISTS table;
+```
+
+
+**!!!** ***Take care not to delete a table by accident!***
 
 
 [Back to Main](../README.md)
