@@ -2,7 +2,7 @@
 ---
 ## Structured Query Language
 
-SQL is Structured Query Language which was designed to allow users to run querieson or manipulate and transform the data from relational databases. Relational databases represent a collection of related tables, that are similar to a spreadsheet.
+SQL is Structured Query Language which was designed to allow users to run querieson or manipulate and transform the data from relational databases. Relational databases represent a collection of related tables, that are similar to a spreadsheet. Columns are like properties and rows are like instances. A *schema* dictates the structure of each tables and the datatypes that their columns can contain. This structuring can allow databases to be more efficient.
 
 SELECT qureies are used to retrieve data from SQL databases. They declare what data we are looking for, where to find it in the database, and, sometimes, how to transform it. A basic SELECT command looks like this:
 
@@ -49,6 +49,27 @@ These include the operators `AND` and `OR`.
 
 * *Strings must always be in quotes*
 
+## More Commands 
+
+### Filtering and Sorting Queries
+
+- `DISTINCT` allows us to blindly discard rows that have duplicate column values. *(There are ways to do this more specifically)*
+- `ORDER BY` sorts results in either ascending (ASC) or descending (DESC) order.
+- `LIMIT` reduces the number of rows returned.
+- `OFFSET` specifies where to begin counting the rows from.
+
+### Inserting and Updating Rows
+
+- `INSERT` declares which table to write into, which data in which columns, and a number of rows to insert. Multiple rows can be inserted by listing them sequentially in the same INSERT command.
+- `UPDATE` allows rows to be altered by specifying exactly which table, columns and rows to update. The datatypes of the columns must still match.
+
+```SQL
+UPDATE table
+SET cloumn = value or expr
+WHERE condition;
+```
+
+**!** ***Take care not to update wrong rows or all rows***
 
 
 [Back to Main](../README.md)
