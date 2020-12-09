@@ -58,7 +58,7 @@ These include the operators `AND` and `OR`.
 - `LIMIT` reduces the number of rows returned.
 - `OFFSET` specifies where to begin counting the rows from.
 
-### Inserting and Updating Rows
+### Inserting, Updating and Deleting Rows
 
 - `INSERT` declares which table to write into, which data in which columns, and a number of rows to insert. Multiple rows can be inserted by listing them sequentially in the same INSERT command.
 - `UPDATE` allows rows to be altered by specifying exactly which table, columns and rows to update. The datatypes of the columns must still match.
@@ -69,7 +69,45 @@ SET cloumn = value or expr
 WHERE condition;
 ```
 
-**!** ***Take care not to update wrong rows or all rows***
+**!!!** ***Take care not to update wrong rows or all rows!***
+
+- `DELETE` irrevocably removes a row or rows from the table. It is important to use a `WHERE` condition with this command.
+
+**!!!** ***Take care not to delete wrong rows or all rows!***
+
+## Table Commands
+
+### Creating Tables
+
+Tables can be created by with the `CREATE` command in which we designate the name of the table, a title for each column, the type of data allowed in those columns, and possibly constrainments or default values for any of the columns. The optional `IF NOT EXISTS` may be added to prevent overwriting an existing table.
+
+```SQL
+CREATE TABLE IF NOT EXISTS tabeltitle (
+  column DataType TableConstraints DEFAULT default_value,
+  another column DataType TableConstraints DEFAULT default_value,
+  ...
+);
+```
+
+When creating a table, we must designate datatypes for each of the columns. It is also possible to add constraints to each column if we wish.
+
+#### Datatypes
+
+| **DataType** | **Description** |
+| --- | --- |
+| `INTEGER` , `BOOLEAN` | Whole numbers and `true`/`false` values. The Booleans are sometimes stored as 0 or 1 |
+| `FLOAT` , `DOUBLE` , `REAL` | Numbers more accurate than integers, with varying degrees of precision |
+| `CHARACTER(num_char)` , `VARCHAR(num_char)` , `TEXT` | Strings of characters, a maximum number of characters is designated when using the first two |
+| `DATE` , `DATETIME` | Stores dates/times |
+| `BLOB` | Binary data |
+
+#### Constraints
+
+| **Constraint** | **Description** |
+| --- | --- |
+| `PRIMARY KEY` | Values in column are unique and can only be used on a single row of the table. They can therefore be used to identify that row |
+| `AUTOINCREMENT` | Used in integer columns. It is auto-filled and incremented with each row of insertions |
+
 
 
 [Back to Main](../README.md)
