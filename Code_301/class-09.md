@@ -119,6 +119,74 @@ A higher order function either:
 
 ### Filter
 
+**Imperative Approach**
+
+- We create a new empty array
+- We iterate over the existing array
+- We push the desired elements into the new empty array, filling it
+
+**Declarative Approach**
+
+Using a first-class entity function and a higher-order function like `.filter` we can accomplish the same results. Often this can be done in less code and has more modularity built into it.
+
+- We create a simple evaluation function like:
+```JavaScript
+function larger(integer) {
+  return integer < this;
+}
+```
+- We then pass that function into the higher-order `.filter` function as an argument:
+```JavaScript
+function sortArray(x, numberArray) {
+  return numberArray.filter(larger, x);
+}
+```
+
+*(In this case, `this` will be the second parameter of the `.filter` function)*
+
+### Map
+
+These same concepts can be applied to maps. A map applies a function to all of the elements of an array and transforms it into an array of new values.
+
+**Imperative Approach**
+
+- We create a new empty array
+- We iterate over the existing array
+- We push the transformed elements into the new empty array, filling it
+
+**Declarative Approach**
+
+- We create a simple function to construct sentences:
+```JavaScript
+const generateSentence = (pet) => `${pet.name} is a good ${pet.type}!`;
+```
+- We then pass that function as an argument into the higher-order `.map` function:
+```JavaScript
+const petSentences = (pets) => pets.map(generateSentence);
+```
+
+*(`Math` functions/methods could also be passed into these higher-order functions rather than used in for... loops for instance)*
+
+These same priciples can be applied to the `.reduce` higher-order function just as easily.
+
+## Refactoring for Performance abd Readability
+
+In his article [***"Refactoring JavaScript for Performance and Readability (with Examples!)"***](https://dev.to/healeycodes/refactoring-javascript-for-performance-and-readability-with-examples-1hec), Andrew Healey says that *good code* lives in the middle ground between speed and comprehendability.
+
+In the two examples of this article, Healey shows and explains some minor changes to improve the overall code:
+
+In one example, an array of ever-growing length was being iterated over with a for loop to find a specific element and also to check if the element existed in any of the arrays indices. The refactor was to change the array of things into a map of things instead and to assign keys to each element as it was added/generated. The for loop was then replaced with a short if statement to throw an error if a searched item was not in the map. To determine an items existence and to locate the data within now required the program to look in one specific place for the data insted of checking every index of a large array.
+
+### Strategies
+
+While there are no absolutes when it comes to clean code, there are some straightforward methods we could implement:
+
+- Return early from functions
+- Cache variables so functions can be read like sentences
+- Check for Web APIs before implementing our own functionality
+
+***Because of the low value placed on refactoring by many businesses today, it is IMPORTANT to get our code right the first time.***
+
 
 
 
