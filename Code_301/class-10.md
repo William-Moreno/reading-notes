@@ -14,7 +14,20 @@ A **call stack** is a model that interpreters use to arrange script functions fo
 
 ### Why is there a call stack?
 
-There is a call stack because the JavaScript engine is a single-threaded interpreter with a single call stack. This call stack is primarily used to invoke function calls. Because there is only one call stack, functions can only be operated on in sequence from the top to the bottom. This *'**L**ast **I**n, **F**irst **O**ut'* methodology is what makes the call stack **synchronous**.
+There is a call stack because the JavaScript engine is a single-threaded interpreter with a single call stack. *"Single-threaded"* means that it can only do one thing at a time. The call stack is fundamentally a data structure utilized to store and manage function execution temporarily and is primarily used to order or sequence the invocation of function calls. Because there is only one call stack, functions can only be operated on in sequence from the top to the bottom. This *'**L**ast **I**n, **F**irst **O**ut'* methodology is what makes the call stack **synchronous**.
+
+*(In **asychronous** JavaScript, there is a callback function, an event loop and a task queue*)
+
+### LIFO
+The last in first out nature of the call stack can be most easily illustrated in the console when an error is thrown (intentionally or not). The error line is the function that was in process at the moment of the break. following the list of lines downward will reveal the function that called the function that broke, and below that, the any function that may have called THAT function.
+
+### Temporary Storage
+
+Our single-threaded interpreter can only work on whichever thing is sitting on top of the stack at any given time. The call stack is similar to an array in the aspect that as new functions are called, they are ***'pushed'*** onto the top *(or end)* of the stack, adding to the stack frame (memory). And, as these functions run to completion, they are ***'popped'*** off of the stack, clearing memory.
+
+### Synchronicity
+
+JavaScript maintains a record or list of the functions in memory, which is called **stack frame**, as well as their position and the order in which the functions will be executed. These elements comprise a concept known as "managing function invocation".
 
 
 
