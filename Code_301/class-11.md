@@ -44,11 +44,19 @@ res.render('index', { people: [ {name: bob}, {name: sam}]});
 ```
 
 ...and, inside our index.ejs, we include this code:
-```html
+```
 <ul>
   <% for(var person of people) { %>
   <li><%= person.name %></li>
   <% } %>
 ```
+
+#### If/Else
+
+In the same basic manner, we can include if/else statements in our EJS. Care must be taken to be sure we include the evaluate character `=`, if we need the actual value of a variable in our EJS.
+
+## Google Books API Docs
+
+
 
 [Back to Main](../README.md)
