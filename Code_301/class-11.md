@@ -6,30 +6,6 @@
 
 Even though there are a number of options to use for these kinds of processes, EJS is popular because it is relatively esy to set up and its syntax and logic is simple.
 
-The following examples, from *Linda Ikechukwu's* article, [*"Using EJS as a Template Engine in your Express App"*](https://medium.com/@Linda_Ikechukwu/https-medium-com-linda-ikechukwu-using-ejs-as-a-template-engine-in-your-express-app-cb3d82c15e17). The second block shows what the first block might look like when utilizing EJS:
-
-```JavaScript
-var html = "<h1>"+data.title+"</h1>"
-html += "<ul>"
-for(var i=0; i<data.supplies.length; i++) {
-    html += "<li><a href='supplies/"+data.supplies[i]+"'>"
-    html += data.supplies[i]+"</a></li>"
-}
-html += "</ul>"
-```
-
-```
-<h1><%=title%></h1>
-<ul>
-   <%for (var i=0;i<supplies.length; i++){%>
-     <li>
-         <a href='supplies/<%= supplies[i] %>'></a>
-         <%=supplies[i]%>
-     </li>
-   <%}%>
-</ul>
-```
-
 To use EJS, we must first install it in our project folder as follows:
 
 ```
