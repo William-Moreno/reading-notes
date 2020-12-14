@@ -57,6 +57,13 @@ In the same basic manner, we can include if/else statements in our EJS. Care mus
 
 ## Google Books API Docs
 
+### Volumes Search
 
+The basic volume search requires a single parameter, "q", which designates a string to search in volumes for. A basic search string then, would be:
+
+```
+https://www.googleapis.com/books/v1/volumes?q=search+terms
+```
+We can specify special keywords in the search terms to search within certain fields:
 
 [Back to Main](../README.md)
