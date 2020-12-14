@@ -18,7 +18,7 @@ for(var i=0; i<data.supplies.length; i++) {
 html += "</ul>"
 ```
 
-```html
+```
 <h1><%=title%></h1>
 <ul>
    <%for (var i=0;i<supplies.length; i++){%>
