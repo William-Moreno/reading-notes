@@ -18,7 +18,7 @@ for(var i=0; i<data.supplies.length; i++) {
 html += "</ul>"
 ```
 
-```JavaScript
+```html
 <h1><%=title%></h1>
 <ul>
    <%for (var i=0;i<supplies.length; i++){%>
@@ -75,4 +75,4 @@ res.render('index', { people: [ {name: bob}, {name: sam}]});
   <% } %>
 ```
 
-
+[Back to Main](../README.md)
