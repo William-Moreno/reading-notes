@@ -55,4 +55,24 @@ In our server.js we need to add lines to `require('body-parser');` and `require(
 
 #### Injecting and Evaulating Variables
 
+Variables can be inserted into EJS templates and evaluated as well. to evaluate the variables we must remember to include the `=` character in the EJS tags. For instance:
+```
+<%= foo %>
+```
+
+#### For Loops and Arrays
+
+We can use a line in our server.js to loop through arrays in out EJS template file to generate viewable content:
+```JavaScript
+res.render('index', { people: [ {name: bob}, {name: sam}]});
+```
+
+...and, inside our index.ejs, we include this code:
+```html
+<ul>
+  <% for(var person of people) { %>
+  <li><%= person.name %></li>
+  <% } %>
+```
+
 
