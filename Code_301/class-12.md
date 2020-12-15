@@ -25,3 +25,5 @@ Once they are defined, our partials are ready for use. We always use the delimit
 ```
 
 In this manner, we only need write the code for the footer once and we can then easily insert it into any number of .ejs pages using a single line of code. We can even insert multiple partials in a single or several pages.
+
+[Back to Main](../README.md)
