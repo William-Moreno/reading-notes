@@ -23,7 +23,7 @@ The form's `action` attribute is the target destination for the its data. It sho
 
 or
 
-``html
+```html
 <form action="/somewhere_else">
 ```
 
