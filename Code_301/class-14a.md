@@ -61,9 +61,20 @@ If the location of an office were to change, all of the entries on this table wo
 | ~~1004~~ | ~~John Hunt~~ | ~~New York~~ | ~~212-555-1212~~ | ~~Dell~~ | ~~HP~~ | ~~Apple~~ |
 | 1005 | Martin Hap | Chicago | 312-555-1212 | Boeing | - | - |
 
+### Searching and Sorting
 
+The final issue with this table is that it makes queries to find data such as specific customers more difficule by requiring a longer or more convoluted query. If all of the customer data were in one column of the table it would make such a query simpler. This table would also make sorting by customer challenging, requiring three separate `UNION` queries to complete.
 
+These issues can be mitigated by separating the information an putting it into multiple tables, each serving a more singular purpose.
 
+### Definition
 
+There are 3 progressive forms of database normaliztion, each successive form building upon the previous form:
+
+- **First Normal Form** - Information is stored in a realtion table. Each column contains an atomis value and there are no repeating groups of columns
+
+- **Second Normal Form** - All of the tables depend on its primary key
+
+- **Third Normal Form** - None of the table's columns are transitively dependent on the primary key.
 
 [Back to Main](../README.md)
