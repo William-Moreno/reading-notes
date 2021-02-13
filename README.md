@@ -17,7 +17,7 @@ _...but you can call me "Bill"._
 
 ### About Me
 
-My name is William Moreno. I am a software developer with a background in manufacturing, where I specialized in root cause analysis, quality assurance and process design, development and improvement. I often performed these tasks in conjunction with customers at their places of business to incorporate their insights and feedback into solutions that better met their needs.
+I am a software developer with a background in manufacturing, where I specialized in root cause analysis, quality assurance and process design, development and improvement. I often performed these tasks in conjunction with customers at their places of business to incorporate their insights and feedback into solutions that better met their needs.
 Despite my successes, I never developed enthusiasm for the field I was in. So, I made an effort to learn coding and discovered that not only do I have a talent for coding, I also enjoy it. I am looking for an opportunity to put my talents, experience and passion to use with a position in software development. I want to be part of a team that overcomes challenging problems with creative and effective, customer-driven solutions.
 
 
