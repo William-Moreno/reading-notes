@@ -17,7 +17,9 @@ _...but you can call me "Bill"._
 
 ### About Me
 
-My experience was built in the manufacturing field where I developed proficiency serving in process improvement as well as cause and corrective action task forces. But, after years in that industry, I determined that I wanted an opportunity to transition into a field that was more personally fulfilling and that I was more enthusiastic about. I decided on software development because I have always been fascinated by it and I finally stopped telling myself that I could not learn to do it. The skill set that I am building can be applied to a vast and varied range of fields. I believe that my background in both process improvement and in C & CA analysis skills will be valuable resources to any software development role I take. However, I would love to be connected to the game industry in some way, perhaps helping to design apps for cooperative board games or even game apps or video games. I would love the opportunity to contribute to the game industry because games foster in their players skills such as: problem-solving, critical thinking, resource management, risk assessment and social skills. I believe that my background in both process improvement and in C & CA analysis skills will be valuable resources to any software development role I take.
+My name is William Moreno. I am a software developer with a background in manufacturing, where I specialized in root cause analysis, quality assurance and process design, development and improvement. I often performed these tasks in conjunction with customers at their places of business to incorporate their insights and feedback into solutions that better met their needs.
+Despite my successes, I never developed enthusiasm for the field I was in. So, I made an effort to learn coding and discovered that not only do I have a talent for coding, I also enjoy it. I am looking for an opportunity to put my talents, experience and passion to use with a position in software development. I want to be part of a team that overcomes challenging problems with creative and effective, customer-driven solutions.
+
 
 [My GitHub](https://github.com/William-Moreno)
 
