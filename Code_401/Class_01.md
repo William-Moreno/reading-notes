@@ -62,4 +62,8 @@ gatherData();
 
 A **Promise** is a kind of placeholder for a value which may not yet be known when the promise is created. They are used with asynchronous functions or methods. Essentially, the function or method "promises" to supply the actual value of the placeholder at some future time when it has been determined or obtained. When this occurs *(resolved)*, handlers in the promise's `.then()` method are called. If the code resposible for providing the promise's value fails for any reason *(rejected)*, it can be handled with a `.catch()` method.
 
+## Are All Callback Functions Considered to be Asynchronus?
+
+No. Callback functions can be either or both synchronous and asynchronous. Callback functions like those shown above in the `Array.map()` and `Array.reduce()` examples are synchronous. They remain on the stack until the `.map()` or `.reduce()` methods completely resolve. Callback functions such as the `(returnedData => console.log(returnedData));` and `((err) => console.error(err));` in the first `superagent.get()` example above are asynchronous. They are removed from the stack while they await the completion of the `superagent.get()` request. Once it is finished the corresponding callback function is then executed.
+
 [Back to Main](../README.md)
