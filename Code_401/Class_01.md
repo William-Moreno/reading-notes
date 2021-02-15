@@ -60,5 +60,6 @@ gatherData();
 
 ## Promises
 
+A **Promise** is a kind of placeholder for a value which may not yet be known when the promise is created. They are used with asynchronous functions or methods. Essentially, the function or method "promises" to supply the actual value of the placeholder at some future time when it has been determined or obtained. When this occurs *(resolved)*, handlers in the promise's `.then()` method are called. If the code resposible for providing the promise's value fails for any reason *(rejected)*, it can be handled with a `.catch()` method.
 
 [Back to Main](../README.md)
