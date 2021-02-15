@@ -25,3 +25,7 @@ console.log(reducer);
 
 The displayed result will be 3. Since we did not designate an initial value for accum, it became the first element of the array, 81. The callback function then divides accum by the current value (81 / 3) and assigns the value 27 to accum for the next and final iteration. This time when the callback function divides accum by the current value (27 / 9) the result of 3 is assigned to accum. As this is the final iteration, the value returned from the `arr.reduce()` is 3.
 
+
+
+
+[Back to Main](../README.md)
