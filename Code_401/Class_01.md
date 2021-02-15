@@ -18,14 +18,47 @@ In `Array.reduce()`, `.reduce()` is a method used to "reduce" the array it is us
 
 ```JavaScript
 const arr = [81, 3, 9];
-const reducer = arr.reduce((accum, value) => accum / value);
+const divider = arr.reduce((accum, value) => accum / value);
 
-console.log(reducer);
+console.log(divider);
 ```
 
 The displayed result will be 3. Since we did not designate an initial value for accum, it became the first element of the array, 81. The callback function then divides accum by the current value (81 / 3) and assigns the value 27 to accum for the next and final iteration. This time when the callback function divides accum by the current value (27 / 9) the result of 3 is assigned to accum. As this is the final iteration, the value returned from the `arr.reduce()` is 3.
 
+## `superagent()`
 
+Two ways `superagent()` can be used are:
+- Promise `.then()`
+- `async`/`await`
+
+### Promise Syntax
+
+Using Promise syntax, fetching data might look like this:
+
+```Javascript
+superagent.get(urlLocation)
+  .then(returnedData => {
+    console.log(returnedData);
+  }).catch((err) => console.error(err));
+```
+
+### `Async`/`Await` Syntax
+
+Using `async`/`await` syntax, fetching data might look like this:
+
+```JavaScript
+async function gatherData() {
+  try{
+    const returnedData = await superagent.get(urlLocation);
+    console.log(returnedData);
+  } catch(e) {console.error(e);
+  }
+}
+
+gatherData();
+```
+
+## Promises
 
 
 [Back to Main](../README.md)
