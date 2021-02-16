@@ -60,7 +60,22 @@ Tends to be slower because it uses the complex XML format | generally faster and
 | **Routing** | *Routing is the mechanism by which requests are connected to some code. It is essentially the way you navigate through a website or web-application.* [Wilbert Schepenaar](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f) |
 | **WRRC** | *'Web Request/Response Cycle'* *The web is a cycle of requests and responses that flow between clients and servers.* [Jen Strong](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047) |
 
+## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
+1. Node.js is a **runtime environment** intended for use OUTSIDE of a browser context
+1. Express.js is a Node web **framework** that allows us to write handlers for requests using HTTP verbs and routes and utilize view rendering engines to generate templated responses
+1. Continuous Integration is a process developers use to integrate code into a shared repository where the code is verified by automated build and testing. This ensures the code is both "good" as well as able to be successfully integrated into the existing code in the repository.
+
+## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
+
+1. Error-First-Callbacks
+1. `express.Router()`
+1. `.next()`
+
+## I Am Most Excited About Trying to Implement or See How These Work:
+
+- Object Relational Mappers (ORM)
+- Additional view rendering templates
 
 
 [Back to Main](../README.md)
