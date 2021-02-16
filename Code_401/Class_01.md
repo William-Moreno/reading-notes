@@ -1,4 +1,5 @@
 # Node Ecosystem, TDD, CI/CD
+---
 
 ## `Array.map()`
 
@@ -14,7 +15,7 @@ The displayed result will be the array [2, 3, 4] because the callback function a
 
 ## `Array.reduce()`
 
-In `Array.reduce()`, `.reduce()` is a method used to "reduce" the array it is used on to a single value. The value does not have to be a number. It could be a string or a boolean for example. The value is obtained by executing a callback function on each element of the array and tracking the returned value in the accumulator argument for the next iteration. After the final iteration, this accumulator becomes the final single value. The initial value of the accumulator can be designated, but if it is not the first element of the array will be used as the inital accumulator and skipped. Here is an example:
+In `Array.reduce()`, `.reduce()` is a method used to "reduce" the array it is used on to a single value. The value does not have to be a number. It could be a string or a boolean for example. The value is obtained by executing a callback function on each element of the array and tracking the returned value in the accumulator argument for the next iteration. After the final iteration, this accumulator becomes the final single value. The initial value of the accumulator can be designated, but if it is not, the first element of the array will be used as the inital accumulator and skipped. Here is an example:
 
 ```JavaScript
 const arr = [81, 3, 9];

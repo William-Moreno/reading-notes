@@ -83,4 +83,5 @@ Reading notes from Code 301: _Intermediate Software Development_.
 Reading notes from Code 401: _Advanced Software Development_.
 
 - [Node Ecosystem, TDD, CI/CD](Code_401/Class_01.md)
+- [Express](Code_401/class_02.md)
 
