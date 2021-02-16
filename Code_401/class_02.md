@@ -52,6 +52,13 @@ SOAP was the standard approach to web service communication protocols for a long
 | offers built in logic to compensate for failed communications | generally considered easier to work with |
 Tends to be slower because it uses the complex XML format | generally faster and uses less bandwidth and easier to integrate with existing websites |
 
+## Vocabulary Terms
+| **Vocabulary Term** | **Definition** |
+| --- | --- |
+| **Web Server** | *A web server is a piece of software that often runs on a hardware server offering service to a user, usually referred to as the client* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Web_server) |
+| **Express** | *Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction) |
+| **Routing** | *Routing is the mechanism by which requests are connected to some code. It is essentially the way you navigate through a website or web-application.* [Wilbert Schepenaar](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f) |
+| **WRRC** | *'Web Request/Response Cycle'* *The web is a cycle of requests and responses that flow between clients and servers.* [Jen Strong](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047) |
 
 
 
