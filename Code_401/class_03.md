@@ -3,39 +3,26 @@
 
 ## 3 Real World Use Cases to Change the Request with Custom Middleware
 
-- Authenticate Users
-- Log the Time of the Request
-- Determine the Origin of the Request
+- Authenticate users
+- Log the time and/or origin of the request
+- Handling errors
 
 ## True or False: The Route Handler is Middleware?
 
-After researching numerous sources including but not limited to Express.docs, GitHub, StackOverflow MDN Web Docs, there appears to be plenty debate over whether route handlers are middleware or not. The debates touch on topics such as the absence of the `next` argument, the handlers association with HTTP request verbs, whether middleware delivers a response to a request and other criteria. In my opinion, they are not middleware per se, but I can not support that interpretation with any hard evidence.
+After researching numerous sources including but not limited to Express.docs, GitHub, StackOverflow MDN Web Docs, there appears to be plenty debate over whether route handlers are middleware or not. The debates touch on topics such as the absence of the `next` argument, the handlers association with HTTP request verbs, whether middleware delivers a response to a request and other criteria. In my opinion, they are not middleware, they are *'handlers'* (callback functions for routes/requests), but I can not support that interpretation with any hard evidence.
 
-#### 3 Samples Provided in the Article
+#### In What Ways Can a Middleware Function End the Process and Send Data to the Browser?
 
-- [Nock](https://github.com/nock/nock) - an HTTP library designed to replicate and mock servers and expectations in Node.js
-- [Mockserver](https://www.npmjs.com/package/mockserver) - a library that utilizes mock files in order to serve realistic mock responses. It is also highly adaptable across a wide range of options.
-- [Beeceptor](https://beeceptor.com/) - a toolthat requires absolutely no code in order to utilize it. It is a free online tool for mocking a REST API interaction using any HTTP request.
+- Sending a response of some type
+- Throwing an error
 
-## Compare and Contrast Swagger and APIDoc.js
+## At What Point in the Request Lifecycle Can Middleware be “Injected”?
 
-| **Swagger** | **APIDoc.js** |
-| --- | --- |
-| creates documentation for API | creates documentation for API |
-| requires that implemented methods be documented with custom comment data | requires that implemented methods be documented with custom comment data |
-| uses OpenAPI specification to work | creates documentation from API annotations in source code |
-| [Swagger Documentation](https://swagger.io/docs/) | [APIDoc.js](https://swagger.io/docs/) |
+Middleware can be *'injected'* anytime after the request has been made and before a response has been returned. During the time that the request is *"in the tunnel"* between request and response.
 
+## What Can Cause Express to Error with “Request headers sent twice, cannot start a second response”?
 
-## Which HTTP Status Codes Should Be Sent with Each Type of (Un)Successful API Call?
-
-According to [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status), HTTP response status codes are grouped into 5 classes:
-
-1. Informational responses (`100` - `199`)
-1. Successful responses (`200` - `299`)
-1. Redirects (`300` - `399`)
-1. Client errors (`400` - `499`)
-1. Server errors (`500` - `599`)
+This means that for a given client request the server previously sent a response back to the client and now is unexpectedly trying to send another response to the same request. [Understanding Node Error \[ERR_HTTP_HEADERS_SENT\]](https://www.codementor.io/@oparaprosper79/understanding-node-error-err_http_headers_sent-117mpk82z8) by *Prosper Opara*
 
 ## Compare and Contrast SOAP and ReST
 
