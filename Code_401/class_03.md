@@ -39,13 +39,13 @@ This means that for a given client request the server previously sent a response
 
 1. Subclasses and extending not only ES6 syntax classes but also traditional function-based "classes"
 1. Route paths used with request methods not only define endpoints, but also can be comprised of strings, string-patterns or even *regular expressions*
-1. Continuous Integration is a process developers use to integrate code into a shared repository where the code is verified by automated build and testing. This ensures the code is both "good" as well as able to be successfully integrated into the existing code in the repository.
+1. Hoisting affects varying kinds of declarations differently
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
 
-1. Error-First-Callbacks
+1. Writing error-handling modules correctly
 1. `express.Router()`
-1. `.next()`
+1. Hoisting, as it relates to class declarations
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
