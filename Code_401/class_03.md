@@ -27,13 +27,13 @@ This means that for a given client request the server previously sent a response
 ## Vocabulary Terms
 | **Vocabulary Term** | **Definition** |
 | --- | --- |
-| **Middleware** | *A web server is a piece of software that often runs on a hardware server offering service to a user, usually referred to as the client* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Web_server) |
-| **Request Object** | *Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction) |
-| **Response Object** | *Routing is the mechanism by which requests are connected to some code. It is essentially the way you navigate through a website or web-application.* [Wilbert Schepenaar](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f) |
-| **Application Middleware** | *'Web Request/Response Cycle'* *The web is a cycle of requests and responses that flow between clients and servers.* [Jen Strong](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047) |
-| **Routing Middleware** |  |
-| **Test Driven Development** |  |
-| **Behavorial Testing** |  |
+| **Middleware** | *Middleware are functions executed in the middle, after the incoming request then produces an output* [A Simple Explanation of Express Middleware](https://medium.com/@agoiabeladeyemi/a-simple-explanation-of-express-middleware-c68ea839f498) |
+| **Request Object** | *The request object represents the HTTP request and has properties for the request string, parameters, body HTTP headers, and more* [TutorialsPoint](https://www.tutorialspoint.com/nodejs/nodejs_request_object.htm) |
+| **Response Object** | *The response object is data returned from the server to a client following an HTTP request, and has many properties much like a request object* 
+| **Application Middleware** | *Middleware that is bound to an instance of the **app object** such as `app.use()` and `app.get()` and other HTTP verbs that facilitates functionality of the application* |
+| **Routing Middleware** | *Router-level middleware works in the same way as application-level middleware, except it is bound to an instance of `express.Router()` [Expressjs](https://expressjs.com/en/guide/using-middleware.html#middleware.router) |
+| **Test Driven Development** | *A software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. This is opposed to software being developed first and test cases created later.* [Wikipedia](https://en.wikipedia.org/wiki/Test-driven_development) |
+| **Behavorial Testing** | *An **Agile** software development process that encourages collaboration among developers, QA and non-technical or business participants in a software project. It encourages teams to use conversation and concrete examples to formalize a shared understanding of how the application should behave.* [Wikipedia](https://en.wikipedia.org/wiki/Behavior-driven_development) |
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
