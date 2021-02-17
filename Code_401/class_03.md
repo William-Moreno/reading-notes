@@ -24,27 +24,16 @@ Middleware can be *'injected'* anytime after the request has been made and befor
 
 This means that for a given client request the server previously sent a response back to the client and now is unexpectedly trying to send another response to the same request. [Understanding Node Error \[ERR_HTTP_HEADERS_SENT\]](https://www.codementor.io/@oparaprosper79/understanding-node-error-err_http_headers_sent-117mpk82z8) by *Prosper Opara*
 
-## Compare and Contrast SOAP and ReST
-
-The following information is derived from the 2017 Stackify article [*"SOAP vs. REST: The Differences and Benefits Between the Two Widely-Used Web Service Communication Protocols"*](https://stackify.com/soap-vs-rest/) by Alexandra Altvater.
-
-SOAP was the standard approach to web service communication protocols for a long time but it has been dominated by REST in recent years. REST now represents over 70% of public APIs.
-
-| **SOAP** | **ReST** |
-| --- | --- |
-| **S**imple **O**bject **A**ccess **P**rotocol | **Re**presentational **S**tate **T**ransfer |
-| performs operations through messaging patterns | simply accesses data |
-| provides more robust security and support for identity verification | allows greater variety of data formats |
-| offers built in logic to compensate for failed communications | generally considered easier to work with |
-Tends to be slower because it uses the complex XML format | generally faster and uses less bandwidth and easier to integrate with existing websites |
-
 ## Vocabulary Terms
 | **Vocabulary Term** | **Definition** |
 | --- | --- |
-| **Web Server** | *A web server is a piece of software that often runs on a hardware server offering service to a user, usually referred to as the client* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Web_server) |
-| **Express** | *Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction) |
-| **Routing** | *Routing is the mechanism by which requests are connected to some code. It is essentially the way you navigate through a website or web-application.* [Wilbert Schepenaar](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f) |
-| **WRRC** | *'Web Request/Response Cycle'* *The web is a cycle of requests and responses that flow between clients and servers.* [Jen Strong](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047) |
+| **Middleware** | *A web server is a piece of software that often runs on a hardware server offering service to a user, usually referred to as the client* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/Web_server) |
+| **Request Object** | *Express is the most popular Node web framework, and is the underlying library for a number of other popular Node web frameworks* [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction) |
+| **Response Object** | *Routing is the mechanism by which requests are connected to some code. It is essentially the way you navigate through a website or web-application.* [Wilbert Schepenaar](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f) |
+| **Application Middleware** | *'Web Request/Response Cycle'* *The web is a cycle of requests and responses that flow between clients and servers.* [Jen Strong](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047) |
+| **Routing Middleware** |  |
+| **Test Driven Development** |  |
+| **Behavorial Testing** |  |
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
