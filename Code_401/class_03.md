@@ -37,8 +37,8 @@ This means that for a given client request the server previously sent a response
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
-1. Node.js is a **runtime environment** intended for use OUTSIDE of a browser context
-1. Express.js is a Node web **framework** that allows us to write handlers for requests using HTTP verbs and routes and utilize view rendering engines to generate templated responses
+1. Subclasses and extending not only ES6 syntax classes but also traditional function-based "classes"
+1. Route paths used with request methods not only define endpoints, but also can be comprised of strings, string-patterns or even *regular expressions*
 1. Continuous Integration is a process developers use to integrate code into a shared repository where the code is verified by automated build and testing. This ensures the code is both "good" as well as able to be successfully integrated into the existing code in the repository.
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
@@ -49,8 +49,7 @@ This means that for a given client request the server previously sent a response
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
-- Object Relational Mappers (ORM)
-- Additional view rendering templates
+- `express.Router()`
 
 
 [Back to Main](../README.md)
