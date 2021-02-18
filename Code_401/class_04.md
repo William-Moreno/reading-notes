@@ -50,19 +50,19 @@ A class constructor creates an instance of the class. A constructor in JavaScrip
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
-1. Subclasses and extending not only ES6 syntax classes but also traditional function-based "classes"
-1. Route paths used with request methods not only define endpoints, but also can be comprised of strings, string-patterns or even *regular expressions*
-1. Hoisting affects varying kinds of declarations differently
+1. SQL databases are relational databases, and the relations can be one-to-one, one-to-many and many-to-many.
+1. The difference between horizontal and vertical scalability
+1. "key: value" storage is a powerful tool.
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
 
-1. Writing error-handling modules correctly
-1. `express.Router()`
-1. Hoisting, as it relates to class declarations
+1. NoSQL databases and how/when to use them vs SQL databases
+1. "Hierarchial data storage"
+1. What Graph databases are and how/when they are most commonly used.
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
-- `express.Router()`
+- MongoDB
 
 
 [Back to Main](../README.md)
