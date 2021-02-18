@@ -9,13 +9,17 @@
 
 ## Use Cases for `beforeEach()` or `afterEach()` in Test Suites
 
+If you have some work you need to do repeatedly for many tests, you can use `beforeEach()` and `afterEach()`.
 
+For example, let's say that several tests interact with a database of cities. You have a method `initializeCityDatabase()` that must be called before each of these tests, and a method `clearCityDatabase()` that must be called after each of these tests. You can do this much more 'DRY'-ly with `beforeEach()` and `afterEach()`
+
+- [JestJS.io Docs](https://jestjs.io/docs/en/setup-teardown)
 
 ## What is One Downside of Test Driven Development?
 
 ***Tests got to be maintained when requirements change...***
 
-Probably, the strongest argument against TDD is that the tests need to be maintained because the code has got to. Whenever requirements change, you would like to vary the code and tests. But you’re working with TDD. this suggests that you simply got to change the tests first then make the tests pass. [*"Advantages and disadvantages of Test Driven Development (TDD)"*](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
+Probably, the strongest argument against TDD is that the tests need to be maintained because the code has got to. Whenever requirements change, you would like to vary the code and tests. But you’re working with TDD. this suggests that you simply got to change the tests first then make the tests pass. [*"Advantages and disadvantages of Test Driven Development (TDD)"*, GeeksforGeeks](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
 
 ## What's the Primary Difference Between ES6 Classes and Constructor/Prototype Classes?
 
