@@ -11,7 +11,7 @@
 
 After researching numerous sources including but not limited to Express.docs, GitHub, StackOverflow MDN Web Docs, there appears to be plenty debate over whether route handlers are middleware or not. The debates touch on topics such as the absence of the `next` argument, the handlers association with HTTP request verbs, whether middleware delivers a response to a request and other criteria. In my opinion, they are not middleware, they are *'handlers'* (callback functions for routes/requests), but I can not support that interpretation with any hard evidence.
 
-#### In What Ways Can a Middleware Function End the Process and Send Data to the Browser?
+## In What Ways Can a Middleware Function End the Process and Send Data to the Browser?
 
 - Sending a response of some type
 - Throwing an error

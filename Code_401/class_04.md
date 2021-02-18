@@ -3,26 +3,27 @@
 
 ## 3 Advantages to Test Driven Development
 
-- Authenticate users
-- Log the time and/or origin of the request
-- Handling errors
+- You only write code that's needed
+- More modular design
+- Less debugging
 
 ## Use Cases for `beforeEach()` or `afterEach()` in Test Suites
 
-After researching numerous sources including but not limited to Express.docs, GitHub, StackOverflow MDN Web Docs, there appears to be plenty debate over whether route handlers are middleware or not. The debates touch on topics such as the absence of the `next` argument, the handlers association with HTTP request verbs, whether middleware delivers a response to a request and other criteria. In my opinion, they are not middleware, they are *'handlers'* (callback functions for routes/requests), but I can not support that interpretation with any hard evidence.
 
-#### What is One Downside of Test Driven Development?
 
-- Sending a response of some type
-- Throwing an error
+## What is One Downside of Test Driven Development?
+
+***Tests got to be maintained when requirements change...***
+
+Probably, the strongest argument against TDD is that the tests need to be maintained because the code has got to. Whenever requirements change, you would like to vary the code and tests. But you’re working with TDD. this suggests that you simply got to change the tests first then make the tests pass. [*"Advantages and disadvantages of Test Driven Development (TDD)"*](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-test-driven-development-tdd/)
 
 ## What's the Primary Difference Between ES6 Classes and Constructor/Prototype Classes?
 
-Middleware can be *'injected'* anytime after the request has been made and before a response has been returned. During the time that the request is *"in the tunnel"* between request and response.
+
 
 ## Why REST?
 
-This means that for a given client request the server previously sent a response back to the client and now is unexpectedly trying to send another response to the same request. [Understanding Node Error \[ERR_HTTP_HEADERS_SENT\]](https://www.codementor.io/@oparaprosper79/understanding-node-error-err_http_headers_sent-117mpk82z8) by *Prosper Opara*
+
 
 ## Vocabulary Terms
 | **Vocabulary Term** | **Definition** |
