@@ -23,11 +23,16 @@ Probably, the strongest argument against TDD is that the tests need to be mainta
 
 ## What's the Primary Difference Between ES6 Classes and Constructor/Prototype Classes?
 
+A class constructor creates an instance of the class. A constructor in JavaScript is just a plain old function that returns an object. The only thing special about a JavaScript constructor is that, when invoked with the new keyword, it assigns its prototype as the prototype of the returned object. 
 
+- [*"As a JS Developer, This Is What Keeps Me Up at Night"*](https://www.toptal.com/javascript/es6-class-chaos-keeps-js-developer-up)
 
 ## Why REST?
 
-
+- REST makes efficient use of bandwidth
+- REST is designed to be stateless
+- REST reads can be cached for better performance and scalability.
+- REST predominantly uses JSON, which means better support for browser clients. 
 
 ## Vocabulary Terms
 | **Vocabulary Term** | **Definition** |
