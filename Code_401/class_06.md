@@ -98,8 +98,8 @@ module.exports = function isLoggedIn(request, response, next) {
 ## Vocabulary Terms
 | **Vocabulary Term** | **Definition** |
 | --- | --- |
-| **Router Middleware** | - |
-| **Dynamic Module Loading** | - |
+| **Router Middleware** | *Router-level middleware works in the same way as application-level middleware, except it is bound to an instance of `express.Router()`* [*"How Node JS middleware Works?"*](https://medium.com/@selvaganesh93/how-node-js-middleware-works-d8e02a936113#) |
+| **Dynamic Module Loading** | *With `import()` operator we can load modules dynamically. The `import()` works like a function, but it is an operator: In order to resolve “module specifiers” relatively to the current module, it needs to know from which module it is invoked.* [*"Javascript tips — Dynamically importing ES modules with `import()`"*](https://medium.com/@leonardobrunolima/javascript-tips-dynamically-importing-es-modules-with-import-f0093dbba8e1) |
 | **Singleton Pattern** | *A design pattern that does nothing but define a class. The class is defined in such a manner that only one instance of the class will be created in the execution of the program.* [GeeksforGeeks](https://www.geeksforgeeks.org/singleton-design-pattern-introduction/) |
 | **Mock Testing** | - |
 
