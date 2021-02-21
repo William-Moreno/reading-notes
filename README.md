@@ -87,3 +87,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Express REST API](Code_401/class_03.md)
 - [Data Modeling](Code_401/class_04.md)
 - [Linked Lists](Code_401/class_05.md)
+- [Authentication](Code_401/class_06.md)
