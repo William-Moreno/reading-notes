@@ -101,7 +101,7 @@ module.exports = function isLoggedIn(request, response, next) {
 | **Router Middleware** | *Router-level middleware works in the same way as application-level middleware, except it is bound to an instance of `express.Router()`* [*"How Node JS middleware Works?"*](https://medium.com/@selvaganesh93/how-node-js-middleware-works-d8e02a936113#) |
 | **Dynamic Module Loading** | *With `import()` operator we can load modules dynamically. The `import()` works like a function, but it is an operator: In order to resolve “module specifiers” relatively to the current module, it needs to know from which module it is invoked.* [*"Javascript tips — Dynamically importing ES modules with `import()`"*](https://medium.com/@leonardobrunolima/javascript-tips-dynamically-importing-es-modules-with-import-f0093dbba8e1) |
 | **Singleton Pattern** | *A design pattern that does nothing but define a class. The class is defined in such a manner that only one instance of the class will be created in the execution of the program.* [GeeksforGeeks](https://www.geeksforgeeks.org/singleton-design-pattern-introduction/) |
-| **Mock Testing** | - |
+| **Mock Testing** | *Mock testing is an approach to unit testing that lets you make assertions about how the code under test is interacting with other system modules. In mock testing, the dependencies are replaced with objects that simulate the behaviour of the real ones. The purpose of mocking is to isolate and focus on the code being tested and not on the behaviour or state of external dependencies.* [Devopedia](https://devopedia.org/mock-testing) |
 
 
 ### CRUD -> REST Method Matches
@@ -114,6 +114,22 @@ module.exports = function isLoggedIn(request, response, next) {
 | **D**ELETE | DELETE |
 
 - [*"CRUD mapping to HTTP Verbs"*](https://medium.com/@ritika.atal.work/crud-mapping-to-http-verbs-354a3c0009f5)
+
+## 3 Things I Had Previously Heard of and Now Have Better Clarity On
+
+1. 
+1. 
+1. 
+
+## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
+
+1. 
+1. 
+1. 
+
+## I Am Most Excited About Trying to Implement or See How These Work:
+
+- 
 
 
 [Back to Main](../README.md)
