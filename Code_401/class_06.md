@@ -49,9 +49,9 @@ module.exports = new Singleton();
 ## Approach to Building a Middleware System for Express
 
 1. Define a function that excepts the three *"lifecycle"* methods (*request, response, next*) as arguments.
-1. Execute code within the function which may or may not alter those arguments. Then end the request and response cycle in some manner or use `next()` to pass the request and response methods on to the nex piece of middleware.
+1. Execute code within the function which may or may not alter those arguments. Then end the request and response cycle in some manner or use `next()` to pass the request and response methods on to the next piece of middleware.
 1. Export the custom middleware using `module.exports`
-1. In your `server.js` file `require` the custom middleware.
+1. In `server.js` file `require` the custom middleware.
 
 Examples of middlewares called `setCurrentUser.js`, `addNewHeader.js` and `isLoggedIn.js` that can fetch a user through authentication steps, design a new header and validate a user's data set:
 
@@ -96,6 +96,7 @@ module.exports = function isLoggedIn(request, response, next) {
 - [*How To Create a Custom Middleware in Express.js*](https://www.digitalocean.com/community/tutorials/nodejs-creating-your-own-express-middleware)
 
 ## Vocabulary Terms
+
 | **Vocabulary Term** | **Definition** |
 | --- | --- |
 | **Router Middleware** | *Router-level middleware works in the same way as application-level middleware, except it is bound to an instance of `express.Router()`* [*"How Node JS middleware Works?"*](https://medium.com/@selvaganesh93/how-node-js-middleware-works-d8e02a936113#) |
