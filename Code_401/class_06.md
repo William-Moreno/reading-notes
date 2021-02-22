@@ -117,19 +117,19 @@ module.exports = function isLoggedIn(request, response, next) {
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
-1. 
-1. 
-1. 
+1. Mock Testing
+1. Router Middleware
+1. The relationship between CRUD and REST
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
 
-1. 
-1. 
-1. 
+1. Hashing passwords
+1. Singletons
+1. Authentication in general
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
-- 
+- bcrypt
 
 
 [Back to Main](../README.md)
