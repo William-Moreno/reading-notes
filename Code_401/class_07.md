@@ -37,6 +37,20 @@ The access to the resources is realized via HTTP / HTTPS with the token indicate
 | **Authorization Code** | *The authorization code is a temporary code that the client will exchange for an access token. The code itself is obtained from the authorization server where the user gets a chance to see what the information the client is requesting, and approve or deny the request.* [*"Authorization Code Grant"*](https://www.oauth.com/oauth2-servers/server-side-apps/authorization-code/) |
 | **Access Token** | *Access tokens are the thing that applications use to make API requests on behalf of a user. The access token represents the authorization of a specific application to access specific parts of a user’s data.* [*"Access Tokens"*](https://www.oauth.com/oauth2-servers/access-tokens/) |
 
+## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
+1. 
+1. 
+1. 
+
+## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
+
+1. 
+1. 
+1. 
+
+## I Am Most Excited About Trying to Implement or See How These Work:
+
+- 
 
 [Back to Main](../README.md)
