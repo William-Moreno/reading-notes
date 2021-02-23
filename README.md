@@ -88,3 +88,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Data Modeling](Code_401/class_04.md)
 - [Linked Lists](Code_401/class_05.md)
 - [Authentication](Code_401/class_06.md)
+- [Bearer Authorization](Code_401/class_07.md)
