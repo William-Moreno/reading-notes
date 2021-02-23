@@ -39,18 +39,18 @@ The access to the resources is realized via HTTP / HTTPS with the token indicate
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
-1. 
-1. 
-1. 
+1. JWT is smaller and more compact making it a good choice to pass in HTML and HTTP
+1. JWT are a stateless solution for authentication whhich is why it is perfect for restful APIs
+1. Do not keep sensitive data in JWT
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
 
-1. 
-1. 
-1. 
+1. How JWT works as a single token and avoids querying the database multiple times for multiple requests
+1. How the 'secrets' are determined for a JWT token
+1. The token verification process
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
-- 
+- JSON Web Tokens
 
 [Back to Main](../README.md)
