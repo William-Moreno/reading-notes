@@ -89,3 +89,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Linked Lists](Code_401/class_05.md)
 - [Authentication](Code_401/class_06.md)
 - [Bearer Authorization](Code_401/class_07.md)
+- [Access Control](Code_401/class_08.md)
