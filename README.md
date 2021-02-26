@@ -90,4 +90,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Authentication](Code_401/class_06.md)
 - [Bearer Authorization](Code_401/class_07.md)
 - [Access Control](Code_401/class_08.md)
-- [Stacks and Queues](Code_401/stack-and-queues.md)
+- [Stacks and Queues](Code_401/stacks-and-queues.md)
