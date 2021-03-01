@@ -27,18 +27,18 @@ Sytems or organizations that utilize role-based access can easily change, add or
 
 ## 3 Things I Had Previously Heard of and Now Have Better Clarity On
 
-1. RBAC is based on varying levels of system access based on an individual's role within an organization
-1. RBAC systems break down quickly when exception/"one-off" roles are created for individuals
-1. RBAC is a computer systems security approach to restricting system access to authorized users, allowing users of differing defined roles access to only the parts of the system, or resources, they require in their assigned role
+1. Most every framework utilized today is based on event-driven programming.
+1. The combination of event-driven and object oriented programming can be very valuable.
+1. Classes not only define an object's properties and methods, but also its behaviors/reactions to events it is listening for.
 
 ## 3 Things I Am Hoping to Learn More About in the Upcoming Lecture
 
-1. A methodical way to approach implementing RBAC
-1. How complex RBAC systems can become based on the number of possible roles and possible resources available in a given organization
-1. Are roles' server access controlled "internally" by issuing specific tokens? or by accessing sometype of database structure?
+1. Using the EventEmitter module that is natively provided by Node.js.
+1. The combination of event-driven and object oriented programming can be very valuable.
+1. Guidelines for how and when specific event listeners should be removed to best make use of *"garbage-collection"*. 
 
 ## I Am Most Excited About Trying to Implement or See How These Work:
 
-- Trying to set up an RBAC system
+- I am most interested in learning about and how to best utilize the EventEmitter module
 
 [Back to Main](../README.md)
