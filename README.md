@@ -91,3 +91,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Bearer Authorization](Code_401/class_07.md)
 - [Access Control](Code_401/class_08.md)
 - [Stacks and Queues](Code_401/stacks-and-queues.md)
+- [Event Driven Applications](Code_401/class_11.md)
