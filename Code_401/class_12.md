@@ -41,6 +41,8 @@ Yes. A client socket and a server socket can be used within a single application
 | **Event Loop** | *A programming construct or design pattern that waits for and dispatches events or messages in a program. Sometimes called the Main (Event) Loop.* [*Wikipedia*](https://en.wikipedia.org/wiki/Event_loop) |
 | **Event Queue** | *This is where your asynchronous code gets pushed to, and waits to be inserted to the call stack.* [*medium.com*](https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd) |
 | **Call Stack** | *where all the synchronus javascript code gets pushed and executed one by one as the interpreter reads the program. Each gets popped out once its execution is done.* [*medium.com*](https://medium.com/@Rahulx1/understanding-event-loop-call-stack-event-job-queue-in-javascript-63dcd2c71ecd) |
-| **Emit/Raise/Trigger** | ** [*Wikipedia*](https://en.wikipedia.org/wiki/Role-based_access_control) |
+| **Emit/Raise/Trigger** | *Part of event driven programming. Emit sends a signal or message to trggier a response.* |
 | **Subscribe** | *subscribers listen for events to emit from a "publisher".* |
-| **database** | ** [*Wikipedia*](https://en.wikipedia.org/wiki/Capability-based_security) |
+| **database** | *An organized collection of data, generally stored and accessed electronically from a computer system.* [*Wikipedia*](https://en.wikipedia.org/wiki/Database) |
+
+[Back to Main](../README.md)
