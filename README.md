@@ -94,3 +94,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Event Driven Applications](Code_401/class_11.md)
 - [Socket.io](Code_401/class_12.md)
 - [Messages Queues](Code_401/class_13.md)
+- [Event Driven Architecture](Code_401/class_14.md)
