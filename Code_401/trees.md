@@ -15,7 +15,7 @@
 - In-order
 - Post-Order
 
-![Sample Tree](./tree-sample.png)
+![Sample Tree](./tree-sample.PNG)
 
 
 ### Pre-order - `root` -> `left` -> `right`
