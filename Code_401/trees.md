@@ -1,4 +1,4 @@
-# Trees - Depth First Traversal
+# Trees - How Depth First Traversal Works
 ---
 
 ## Terminology
