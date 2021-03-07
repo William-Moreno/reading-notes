@@ -31,5 +31,4 @@ The easiest tests to implement on event driven systems are unit tests which test
 | **WRRC** | *Web Request Response Cycle. The web is a cycle where the requests and responses of clients and servers flow from and to each other.* [*"The Request/Response Cycle of the Web*](https://medium.com/@jen_strong/the-request-response-cycle-of-the-web-1b7e206e9047#:~:text=The%20web%20is%20a%20cycle,What%20is%20a%20client%3F&text=Generally%2C%20clients%20are%20web%20browsers,(when%20making%20cURL%20requests).) |
 
 
-
 [Back to Main](../README.md)
