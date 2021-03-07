@@ -96,3 +96,5 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Messages Queues](Code_401/class_13.md)
 - [Event Driven Architecture](Code_401/class_14.md)
 - [Trees](Code_401/trees.md)
+- [AWS: Cloud Servers](Code_401/class_16.md)
+
