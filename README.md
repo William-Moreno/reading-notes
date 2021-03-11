@@ -99,5 +99,5 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [AWS: Cloud Servers](Code_401/class_16.md)
 - [AWS: S3 and Lambda](Code_401/class_17.md)
 - [AWS: API, Dynamo and Lambda](Code_401/class_18.md)
-
+- [AWS: Events](Code_401/class_19.md)
 
