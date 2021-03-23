@@ -101,4 +101,5 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [AWS: API, Dynamo and Lambda](Code_401/class_18.md)
 - [AWS: Events](Code_401/class_19.md)
 - [Component Based UI](Code_401/class_26.md)
+- [Props and State](Code_401/class_27.md)
 
