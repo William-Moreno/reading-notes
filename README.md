@@ -102,4 +102,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [AWS: Events](Code_401/class_19.md)
 - [Component Based UI](Code_401/class_26.md)
 - [Props and State](Code_401/class_27.md)
-
+- [Component Composition](Code_401/class_28.md)

@@ -42,3 +42,5 @@ The components have well-defined interfaces, called ***'props'***, that allow ex
 | **Acceptance Tests** | *Formal testing with respect to user needs, requirements, and business processes conducted to determine whether a system satisfies the acceptance criteria and to enable the user, customers or other authorized entity to determine whether to accept the system.* [Wikipedia](https://en.wikipedia.org/wiki/Acceptance_testing) |
 | **mounting** | *The process by which React adds nodes to the DOM. (removing them from the DOM is known as "unmounting")* [Stack Overflow](https://stackoverflow.com/questions/31556450/what-is-mounting-in-react-js) |
 | **build** | *When a user visits a site, each of the files will require an additional HTTP request, making the site slower to load. To remedy this, we can create a “build” of the app, which merges all CSS files into one file, and does the same with JavaScript.* [Stack Overflow](https://stackoverflow.com/questions/43830866/what-is-npm-run-build-in-create-react-app/48614507#:~:text=When%20a%20user%20visits%20your,the%20same%20with%20your%20JavaScript.) |
+
+[Back to Main](../README.md)
