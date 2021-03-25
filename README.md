@@ -103,3 +103,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Component Based UI](Code_401/class_26.md)
 - [Props and State](Code_401/class_27.md)
 - [Component Composition](Code_401/class_28.md)
+- [Routing](Code_401/class_29.md)
