@@ -26,6 +26,8 @@ They also give developers more control of function logic.
 
 ![Code](../Capture.PNG)
 
+I think the way the `useEffect()` is utilized in the for loop may result in an infinite loop. However, I would have to type in and test the code to be sure.
+
 ## Vocabulary Terms
 
 | **Vocabulary Term** | **Definition** |
