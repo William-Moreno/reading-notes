@@ -105,4 +105,6 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Component Composition](Code_401/class_28.md)
 - [Routing](Code_401/class_29.md)
 - [Hooks API](Code_401/class_31.md)
+- [Custom Hooks](Code_401/class_32.md)
+
 
