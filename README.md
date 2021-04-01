@@ -107,4 +107,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Hooks API](Code_401/class_31.md)
 - [Custom Hooks](Code_401/class_32.md)
 - [Context API](Code_401/class_33.md)
-
+- [Login and Auth](Code_401/class_34.md)
