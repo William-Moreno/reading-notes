@@ -108,3 +108,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Custom Hooks](Code_401/class_32.md)
 - [Context API](Code_401/class_33.md)
 - [Login and Auth](Code_401/class_34.md)
+- [Application State with Redux](Code_401/class_36.md)
