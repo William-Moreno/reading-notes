@@ -110,3 +110,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Login and Auth](Code_401/class_34.md)
 - [Application State with Redux](Code_401/class_36.md)
 - [Redux - Combined Reducers](Code_401/class_37.md)
+- [Redux - Asynchronous Actions](Code_401/class_38.md)
