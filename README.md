@@ -111,3 +111,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Application State with Redux](Code_401/class_36.md)
 - [Redux - Combined Reducers](Code_401/class_37.md)
 - [Redux - Asynchronous Actions](Code_401/class_38.md)
+- [Redux - Additional Topics](Code_401/class_39.md)
