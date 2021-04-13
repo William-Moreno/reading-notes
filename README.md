@@ -113,3 +113,4 @@ Reading notes from Code 401: _Advanced Software Development_.
 - [Redux - Asynchronous Actions](Code_401/class_38.md)
 - [Redux - Additional Topics](Code_401/class_39.md)
 - [React Native](Code_401/class_41.md)
+- [Ethics](Code_401/class_42.md)
